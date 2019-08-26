@@ -1,0 +1,144 @@
+\abstract
+% context heading (optional)
+% {} leave it empty if necessary
+{The MICADO near infrared imager on the Extremely Large Telescope will offer diffraction limited imaging over almost an arcminute field of view. With a sensitivity equivalent to the Hubble Space Telescope, MICADO will open up the densest regions of young stellar clusters which are currently limited by confusion. This will allow us to study aspects such as a cluster's IMF in great detail in the Galaxy's densest environments as well as outside the Milky Way.}
+% aims heading (mandatory)
+{The goal of this study was to determine the extent of the parameter space which MICADO will open up for the field of resolved young stellar populations and for studies on the initial mass function. The main question to which we sought an answer was: What is the lowest mass star that MICADO will be able to observe for a given stellar density and distance?}
+% methods heading (mandatory)
+{We used SimCADO, the instrument simulator package for MICADO, to generate observations of 42 dense stellar regions with densities similar to the cores of young stellar clusters. The densities of these stellar field ranged from 10\h2 to 10\h5\,\spa and the fields were placed at distances from 8\,kpc to 5\,Mpc from the Earth. The lowest reliably observable mass for each stellar field was determined via a PSF photometry and subtraction algorithm.}
+% results heading (mandatory)
+{Our results show that stellar densities of \textgreater10\h3\,\spa will be easily resolvable by MICADO. At a distance of 2\,Mpc stars with M\,\textgreater\,2\,\msun will still be resolved in fields of \textgreater10\h4\,\spa, allowing the high-mass end of the IMF to be studied in e.g. NGC\,300. The lowest reliably observable mass in the LMC will be around 0.1\,\msun for clusters with densities \textless10\h3\,\spa. MICADO will open up the stellar content of the cores of all dense young stellar clusters in the Magellanic clouds, allowing the sub-solar mass turnover of the IMF to be studied in detail.}
+%We also show that it will be imperative to have good knowledge of the ELT's PSF. The sharp PSF features due to the ELT's segmented mirror will cause many false signals if not treated carefully.}
+% conclusions heading (optional), leave it empty if necessary 
+{We have shown that MICADO will have access to star clusters 10$\times$ denser than what JWST will be able to access, and over 100$\times$ denser than those imaged by Hubble. This will allow access to all the members of the densest star clusters in the Milky Way and all M\,\textgreater\,0.1\msun members in the Magellanic clouds. While the sensitivity of MICADO will no allow us to study the brown dwarf regime outside the Milky Way, it will provide extraordinary coverage of the turnover of the IMF in the M-dwarf mass regime in the LMC and SMC.}
+
+
+% * ELT PSFs make life very difficult - many fake sources
+% * MICADO can get well into the Brown dwarf regime (>0.01Msun) for all clusters within 8kpc of the Sun
+% * It will just miss out on the BD knee in the LMC (>0.1Msun). But it will catch the true structure of the 0.5Msun knee.
+% * Densities of ~1000 stars/arcsec2 are easily resolvable. 5000 stars/arcsec2 if we have good knowledge of the PSF.
+% * This is equivalent to every star in the Arches cluster at a distance of the LMC. ONC would be fully resolvable (assuming no extinction) in Leo I Dwarf (220kpc)
+% * in the LMC, meaning MICADO can basically resolve out all stars in every YMC listen in Portegeis-Zwart 2010
+
+
+% Current observations of the cores of densely populated clusters are severely limited by confusion as the stellar densities in the densest regions of clusters are often above one star per telescope FWHM.
+
+% We used the MICADO instrument data simulator to generate a suite of images that mimic possible future observations with the ELT+MICADO. The images are of simulated open clusters and OB associations covering a range of cluster masses (100 to 10\,000 M$\odot$), radii (0.3 to 300 pc) and distances (1 kpc to 1 Mpc). We extracted the sources using a basic PSF-subtraction technique and compared the resulting IMF curves to the input models to determine the recovery fractions for various sets of initial parameters.
+
+
+% Problem
+    % IMF is only well studied for nearby clusters, further away crowding gets involved. Assumed to be constant
+    % IMF is needed by all   
+    
+% Opportunity
+    % ELT will give us resolving power and depth
+    % This will allow us determine the IMF shape throughout the MW and in nearby galaxies
+
+% Question we want to answer
+    % What will the limits be for such IMF studies?
+    % Down to what mass stars will we be able to observe?
+    % How crowded can a region be for us to still observe 90% of the stars above the detection limit?
+    % What effects do we need to be aware of when doing such studies?
+    
+% Experiment
+    % Objects of interest were clusters of young stars: open clusters, young massive clusters, OB associations. 
+    % Why, because they are young, i.e. a full IMF and little gas hopefully
+    % OB associations because they are still young but easier to resolve
+
+    % Simulate images of different stellar clusters that follow an IMF
+    % Extract stars from the images and reconstruct the IMF
+
+% Parameter Space    
+    % Current limits are determined either by spatial resolution (HST) or Sky Background (AO observations at VLT)
+    % Spatial resolution is currently at the diffraction limit of HST, at 0.1"
+    % Depth and distance limit of 8m telescopes by atmospheric BG. For NACO and HAWK-I its around 24\m
+
+    % What are typical densities of Young populations
+        % Include graph where OC/OBA are plotted.
+    % Depends on size, mass of cluster and distance from Earth
+    % HST could comfortably resolve ~10 stars/arcsec (3 FWHM) and theoretically go up to ~100 stars/arcsec
+    % NACO could resolve ~100 stars/arcsec comfortably, albeit over a small FoV
+    % MICADO can do 10E3 stars/arcsec comfortably (3 FWHM) and push to 10E4
+
+    % However as stars become too faint to be observed, they contribute to the background noise, but are no longer detectable. Hence effective stellar density decreases
+        % Hence we scaled to 1E6 stars/arcsec
+
+        % stellar densities
+        % - 100 stars/arcsec2 --> 1E6 stars/arcsec2
+
+    % Distance wise we're limited by the background. HST can go to J~28.5 (in a 10 hour observation). NACO/HAWK-I can get down to J~24 in a (1 hour observation). The interesting part of the IMF is around the 0.2-0.5 Msun region. So abs mags of J/K = 11.5/10.5 up to J/K = 7/6. Ground based telescopes are limited to distance moduli of 13 for the BD knee and 17 for the LM knee. This puts us at like 5kpc or 30kpc respectively with ground based scopes. HST can go to DMs of 17 (30kpc) and 21 (200kpc) for the BD and LM knees
+
+    % We want to start at the ground based limits and push the limits. A list of nearby objects where we could investigate the IMF outside of our neighbourhood and the similar conditions that we find here. Realistically they are the closest galaxies and the galactic centre 
+
+        % Distances
+        % - 8kpc, 50kpc, 200kpc, 800kpc, 2Mpc, 5Mpc
+
+% Instrument setup
+    % Standard MICADO setup
+    % K band because Strehl ratio is the best and we have absolute magnitudes for MS stars
+    % Exposure time is set to 1 hour, just because
+    % To save on computation time we only simulated a 2"x2" window near the centre of the FoV
+        % This also meant that we didn't need to worry about the PSF varying over the field
+    % Field of View make a 1/1E5 ratio: at 5Mpc, we're looking at a side length of 50pc. At 50kpc, we're looking at 0.5pc
+        
+    % Field of View : 2" x 2"
+    % PSF : MAORY SCAO
+    % Exposure time : 1 hour
+    % Filter : Ks
+
+% Cluster setup
+    % n stars were sampled from an IMF for each density 
+    % the distance modulus added to the absolute magnitudes of each star
+    % Positions were assigned at random in the 2"x2" square
+        % While this may not be a completely accurate representation of 
+
+% Reduction steps
+        
+
+% Results
+    % ELT PSFs make life very difficult - many fake sources
+    % MICADO can get well into the Brown dwarf regime (>0.01Msun) for all clusters within 8kpc of the Sun
+    % It will just miss out on the BD knee in the LMC (>0.1Msun). But it will catch the true structure of the 0.5Msun knee. 
+    % Densities of ~1000 stars/arcsec2 are easily resolvable. 5000 stars/arcsec2 if we have good knowledge of the PSF. 
+    % This is equivalent to every star in the Arches cluster at a distance of the LMC. ONC would be fully resolvable (assuming no extinction) in Leo I Dwarf (220kpc)
+     % in the LMC, meaning MICADO can basically resolve out all stars in every YMC listen in Portegeis-Zwart 2010
+
+% Discussion
+
+
+
+% Cluster Age : 50 Myr (** should re-run for 5 Myr)
+
+% IMF Variations :
+% Cluster Mass : 1000
+
+% For each section (M<0.08, 0.08<M<0.5, M>0.5), use standard alphas (0.3, 1.3, 2.3) and do +/- (0.1, 0.5)
+
+
+
+
+
+
+
+% Background
+% - What is the IMF and why are we interested in it?
+
+% - What can MICADO, the ELT and SimCADO bring to this field?
+  % IMF studies are currently limited by Seeing for ground based observations, or the diffraction limit of a 2.4m mirror for space based studies. This restricts studies to stellar densities of tens of stars per square arcsecond. In real terms, this means dense stellar environments like the cores of very young open clusters can only be investigated if they are very nearby (@give example). OB associations allow stellar populations at lerger distances to be studied, however these are also 
+  
+
+% - Why are we using Open clusters and OB associations? YMCs?
+  % Mainly because they provide us uncontaminated environments to study the IMF
+  % Open clusters are the birth places of stars, where almost all stars are still present. I.e. no Supernova. Gas only lasts for several ~Myr because of the OB stars. Once the gas is gone the clusters start to disperse. However the high mass stars (>20 Msun) live for around 100 Myr, so even though the stars disperse, we can still get a good handle on the full IMF by looking at the population of OB associations. The ultra high mass end of the IMF will not be recoverable, but that does not matter as the interesting stuff is what is happening around the 0.5Msun knee and into the BD regime.
+  % Obviously the younger the better as then we have as many MS stars as possible. Though too young and we run into two issues - not all stars have formed and gas gets in the way of accurate mass/age determinations.
+  % YMC are the best candidates because they provide us with a young environment where the high mass regions of the IMF are properly sampled, but also where enough of the low mass stars are present to get a proper handle on the actual shape of the LM/BD mass functions
+  
+
+% - What questions do we aim to answer in this study?
+
+%    - At distance X and for stellar density Y, down to which mass (Z) can I get an IMF?
+    
+%    - If variations exist in the IMF, what level could MICADO detect at which distance?
+
+% - What is new about this work
+%  There have been many studies into the stellar populations 
