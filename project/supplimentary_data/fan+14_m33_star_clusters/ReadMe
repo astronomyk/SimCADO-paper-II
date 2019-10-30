@@ -1,0 +1,124 @@
+J/ApJS/211/22      Updated photometry for star clusters in M33      (Fan+, 2014)
+================================================================================
+Star clusters in M33: updated UBVRI photometry, ages, metallicities, and masses.
+    Fan Z., de Grijs R.
+   <Astrophys. J. Suppl. Ser., 211, 22 (2014)>
+   =2014ApJS..211...22F
+================================================================================
+ADC_Keywords: Abundances, [Fe/H] ; Photometry, UBVRI ; Clusters, globular ;
+              Galaxies, nearby
+Keywords: catalogs; galaxies: individual: M33;
+          galaxies: star clusters: general; globular clusters: general
+
+Abstract:
+    The photometric characterization of M33 star clusters is far from
+    complete. In this paper, we present homogeneous UBVRI photometry of
+    708 star clusters and cluster candidates in M33 based on archival
+    images from the Local Group Galaxies Survey, which covers 0.8deg^2^
+    along the galaxy's major axis. Our photometry includes 387, 563, 616,
+    580, and 478 objects in the UBVRI bands, respectively, of which 276,
+    405, 430, 457, and 363 do not have previously published UBVRI
+    photometry. Our photometry is consistent with previous measurements
+    (where available) in all filters. We adopted Sloan Digital Sky Survey
+    ugriz photometry for complementary purposes, as well as Two Micron All
+    Sky Survey near-infrared JHK photometry where available. We fitted the
+    spectral-energy distributions of 671 star clusters and candidates to
+    derive their ages, metallicities, and masses based on the updated
+    PARSEC simple stellar populations synthesis models. The results of our
+    {chi}^2^ minimization routines show that only 205 of the 671 clusters
+    (31%) are older than 2Gyr, which represents a much smaller fraction of
+    the cluster population than that in M31 (56%), suggesting that M33 is
+    dominated by young star clusters (<1Gyr).
+
+Description:
+    Our sample star clusters are mainly selected from San Roman et al.
+    (2010, Cat. J/ApJ/720/1674), whose database is based on observations
+    with the CFHT/MegaCam camera. To supplement these data, we also
+    include 120 confirmed star clusters from the updated (2010) version of
+    Sarajedini & Mancone (2007, Cat. J/AJ/134/447), which were not
+    included in San Roman et al.
+
+    We used archival UBVRI images from the LGGS (Local Group Galaxies
+    Survey; Massey et al. 2006, Cat. J/AJ/131/2478), which covers a region
+    of 0.8deg^2^ along the galaxy's major axis. The observations were
+    taken with the Kitt Peak National Observatory 4m Telescope between
+    2000 August and 2002 September.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+table1.dat     77      708   New UBVRI photometry of M33 clusters
+table2.dat     44      671   Ages, metallicities, and masses of the M33 star
+                              clusters
+--------------------------------------------------------------------------------
+
+See also:
+ J/AJ/145/88 : UBVRI photometry of M33 star clusters. II. (Ma, 2013)
+ J/AJ/144/41 : UBVRI photometry of M33 star clusters. I. (Ma+, 2012)
+ J/MNRAS/426/2427 : Structural param. of M33 star clusters (San Roman+, 2012)
+ J/ApJ/720/1674 : CFHT M33 extended sources catalog (San Roman+, 2010)
+ J/ApJ/700/103  : Ages of star clusters in M33 (Park+, 2009)
+ J/ApJ/699/839  : Newly identified star clusters in M33. II. (San Roman+, 2009)
+ J/AcA/59/47    : HST photometry of M33 stellar clusters (Zloczewski+, 2009)
+ J/AcA/58/23    : Phot. survey for M33 stellar clusters (Zloczewski+, 2008)
+ J/AJ/134/447   : Cat. of star cluster candidates in M 33 (Sarajedini+, 2007)
+ J/AJ/134/2168  : BVI photometry of M33 star clusters (Park+, 2007)
+ J/AJ/131/2478  : M31 and M33 UBVRI photometry (Massey+, 2006)
+ J/A+A/444/831  : New star clusters in M33 (Bedin+, 2005)
+ J/A+A/366/498  : VI photometry of M33 star clusters (Chandar+, 2001)
+ J/ApJS/122/431 : Star Clusters in M33 (Chandar+, 1999)
+ J/AcA/48/455   : Globular Clusters in M31 and M33 (Mochejska+, 1998)
+ http://www.mancone.net/m33_catalog/ : Online M33 cluster catalog
+
+Byte-by-byte Description of file: table1.dat
+--------------------------------------------------------------------------------
+  Bytes Format Units   Label  Explanations
+--------------------------------------------------------------------------------
+  1-  3 I3     ---     Seq    Running sequence number from this paper
+  5-  8 I4     ---     SRID   ? San Roman et al. identifier (1)
+ 10- 12 I3     ---     SMID   ? Updated 2010 version of Sarajedini &
+                                Mancone (2007, Cat. J/AJ/134/447;
+                                <[SM2007] NNN> in Simbad) cluster catalog ID (2)
+ 14- 19 F6.3   mag     Umag   [15.61/21.62]? The KPNO Johnson U band magnitude
+ 21- 25 F5.3   mag   e_Umag   [0.02/0.08]? Uncertainty in Umag
+ 27- 32 F6.3   mag     Bmag   [16.01/21.66]? The KPNO Johnson B band magnitude
+ 34- 38 F5.3   mag   e_Bmag   [0.01/0.06]? Uncertainty in Bmag
+ 40- 45 F6.3   mag     Vmag   [15.28/21.19]? The KPNO Johnson V band magnitude
+ 47- 51 F5.3   mag   e_Vmag   [0.01/0.06]? Uncertainty in Vmag
+ 53- 58 F6.3   mag     Rmag   [14.87/20.76]? The KPNO Cousins R band magnitude
+ 60- 64 F5.3   mag   e_Rmag   [0.01/0.05]? Uncertainty in Rmag
+ 66- 71 F6.3   mag     Imag   [14.72/20.56]? The KPNO Cousins I band magnitude
+ 73- 77 F5.3   mag   e_Imag   [0.02/0.09]? Uncertainty in Imag
+--------------------------------------------------------------------------------
+Note (1): San Roman et al., 2010, Cat. J/ApJ/720/1674;
+          <[SSA2010] NNNN> in Simbad.
+Note (2): http://www.mancone.net/m33_catalog/
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units       Label   Explanations
+--------------------------------------------------------------------------------
+   1-  2 A2     ---         Cat     SR/SM for the catalog origin (1)
+   3-  6 I4     ---         ID      Object identifier number (1)
+   8- 13 F6.3   Gyr         Age     [0.004/12.6] Cluster age
+  15- 19 F5.3   Gyr       e_Age     [0.001/4.1] Uncertainty in Age
+  21- 26 F6.3   [Sun]       [Fe/H]  [-2.4/0.5] Metallicity
+  28- 32 F5.3   [Sun]     e_[Fe/H]  [0.04/1.4] Uncertainty in [Fe/H]
+  34- 38 F5.3   [Msun]      logM    [2.2/6.7]? Log cluster mass
+  40- 44 F5.3   [Msun]    e_logM    [0/1.1]? Uncertainty in logM
+--------------------------------------------------------------------------------
+Note (1): Catalog as follows:
+   SR = San Roman et al., 2010, Cat. J/ApJ/720/1674;
+          <[SSA2010] NNNN> in Simbad 
+   SM = Updated 2010 version of Sarajedini & Mancone (2007, Cat. J/AJ/134/447;
+          <[SM2007] NNN> in Simbad; http://www.mancone.net/m33_catalog/).
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                 Greg Schwarz [AAS], Emmanuelle Perret [CDS]    05-May-2014
