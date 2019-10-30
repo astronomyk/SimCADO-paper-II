@@ -1,18 +1,17 @@
+from os import path as pth
 import numpy as np
 from astropy.io import ascii
 from astropy.table import Table, Column
 
-from matplotlib import pyplot as plt
-from matplotlib.colors import LogNorm
+PKG_DIR = pth.abspath(pth.dirname(__file__))
 
 
 def combine_karachantsev_tables(write_to_disk=False):
 
-    dname = "karachantsev_sfr_catalogue/"
+    dname = pth.join(PKG_DIR, "../", "karachantsev_sfr_catalogue/")
     sfr = ascii.read(dname+"table3.dat", readme=dname+"ReadMe.txt")
-    dname = "karachantsev_list_of_galaxies/"
+    dname = pth.join(PKG_DIR, "../", "karachantsev_list_of_galaxies/")
     phot = ascii.read(dname+"table2.dat", readme=dname+"readme.txt")
-    dname = "karachantsev_list_of_galaxies/"
     dist = ascii.read(dname+"table6.dat", readme=dname+"readme.txt")
 
     wanted_col_names = ["Name", "RAh", "RAm", "RAs", "DE-", "DEd", "DEm", "DEs", "TT", "SFRa"]
@@ -32,21 +31,7 @@ def combine_karachantsev_tables(write_to_disk=False):
     tbl.add_columns([dist_col, sfr_col])
 
     if write_to_disk:
-        tbl.write("combined_karachentsev.dat", format="ascii.fixed_width",
-                  overwrite=True)
+        tbl.write(pth.join(PKG_DIR, "../", "combined_karachentsev.dat"),
+                  format="ascii.fixed_width", overwrite=True)
 
     return tbl
-
-
-def read_combined_table():
-    # "SFRu" is in log10(SFR/L_K), "Dist" in Mpc
-    tbl = ascii.read("combined_karachentsev.dat", format="fixed_width")
-    return tbl
-
-combine_karachantsev_tables(True)
-# tbl = read_combined_table()
-# plt.hist()
-
-
-
-
