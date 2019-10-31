@@ -85,21 +85,24 @@ def plot_nclusters_vs_dist(dist, scale_factor=1520, offset=0):
 #     plt.ylim(1e-7, 1e1)
 
 
-def plot_spec_type_dropouts():
-    top = 2900
+def plot_spec_type_dropouts(xmin=XMIN*1e6, xmax=XMAX*1e6, top=2900,
+                            lm=1, hm=4):
+
     abs_mags = [-6.4, -4.5, -3., -0.7, 1.1, 1.76, 3., 3.8, 5.4, 10.4, 12.7]
     names =  ["B0I",    "O5V",      "B0V",      "B3V",      "A0V",      "F0V",      "G0V",      "K0V",      "M0V",      "M9V",      "L9V"]
     masses = ["",       "",         "18",       "5.5",      "2.3",      "1.6",      "1.1",      "0.85",     "0.6",      "0.065",    ""]
     clrs =  ["#B2EEEC", "#B2EEEC",  "#DAE0E0",  "#DAE0E0",  "#E9ECB8",  "#E4EE40",  "#EECB40",  "#EDB279",  "#ED8C79",  "#DD7C69",  "#C3610F", "#C3610F"]
     mag_lim = 28
 
-    start, end = 4, -1
-    for name, mag, clr, mass in zip(names[start:end], abs_mags[start:end], clrs[start:end], masses[start:end]):
+    lm = len(names) if lm is None else -lm
+    hm = 0 if hm is None else hm
+
+    for name, mag, clr, mass in zip(names[hm:lm], abs_mags[hm:lm], clrs[hm:lm], masses[hm:lm]):
         plt.axvline(mag_lim-mag, c=clr, lw=3, alpha=0.5)
         s = name +" ("+mass+"$M_{\odot}$)" if mass != "" else name
         plt.text(mag_lim-mag, top, s, rotation=270, horizontalalignment="left", verticalalignment="top", alpha=0.7)
     plt.xlabel("Distance Modulus [mag]")
-    plt.xlim(parsec2distmod(XMIN*1e6), parsec2distmod(XMAX*1e6))
+    plt.xlim(parsec2distmod(xmin), parsec2distmod(xmax))
 
     text = """Observational horizons 
 for spectral types 
@@ -109,9 +112,15 @@ $Ks=28^m$ """
     # plt.text(mag_lim - 7., top, text, horizontalalignment="center", verticalalignment="top", alpha=0.7)
 
 
-def plot_notable_galaxy_distances():
-    start, end = 0, -1
-    for d, name in zip([0.05, 0.847, 2.148, 3.53][start:end], ["LMC", "M33", "NGC300", "M82"][start:end]):
+def plot_notable_galaxy_distances(scale_factor=1, start=None, end=None):
+
+    names =          ["ONC", "Trumpler 14", "Sgr A*", "LMC", "M33", "NGC300", "M82"]
+    dists = np.array([0.41,  2.7,           8.5,      50,    847,   2150,     3530]) * scale_factor # kpc
+
+    start = 0 if start is None else start
+    end = len(names) if end is None else end
+
+    for d, name in zip(dists[start:end], names[start:end]):
         plt.axvline(d, c="k", ls=":")
         plt.text(1.03*d, 100, name, rotation=90, horizontalalignment="left", verticalalignment="bottom", alpha=0.9)
 
@@ -124,13 +133,42 @@ def plot_imf_curves(scale_factor=0.5, plot_kroupa=False, plot_chabrier=False):
         plt.loglog(x * scale_factor, yc, c="k", ls="--", alpha=0.3)
         text = "Chabrier" if plot_chabrier else "IMF"
         plt.text(1.03 * XMIN, 1.35 * yc[0], text, rotation=17, alpha=0.5)
+
     if plot_kroupa:
         yk = imf.kroupa(x) * x
         plt.loglog(x * scale_factor, yk, c="k", ls=":", alpha=0.3)
         text = "Kroupa" if plot_chabrier else "IMF"
         plt.text(1.03 * XMIN, 1.2 * yk[0], text, rotation=14, alpha=0.5)
+
     plt.ylim(ymax=1)
     plt.gca().get_yaxis().set_visible(False)
+
+
+def plot_with_combined_mwocs_galocs_table():
+    xmin = 0.01
+    xmax = 3000  # kpc
+
+    tbl = ascii.read("../clusters_plus_galaxies.dat", format="fixed_width")
+    dec = np.array(
+        [float(s + str(d)) for s, d in zip(tbl["DE-"].data, tbl["DEd"].data)])
+    mask = (tbl["SFRa"] != 0.0) * (dec < 35) * (dec > -85)
+    tblc = tbl[mask]
+
+    mask = (tbl["SFRa"] != 0.0) * (dec < 35) * (dec > -85) * \
+           (tbl["SFRa"] != -99)
+    tbls = tbl[mask]
+
+    dist = np.logspace(np.log10(50), np.log10(xmax), 1001)
+    csfr = [np.sum(10 ** tbls["SFRa"][tbls["Dist"] < d]) for d in dist]
+    plt.plot(dist, 1520 * np.array(csfr) + 590, "r--",
+             label="$H_{\\alpha}$ Projection")
+
+    dist = np.logspace(np.log10(xmin), np.log10(xmax), 1001)
+    cclust = [np.sum(tblc["n_clust"][tblc["Dist"] < d]) for d in dist]
+    plt.plot(dist, cclust, "b", label="Literature")
+
+    plt.xlabel("Distance [kpc]")
+    plt.ylabel("Cumulative number of young clusters")
 
 
 ################################################################################
@@ -141,7 +179,7 @@ def make_plot_num_clusters_estimated_from_halpha_sfr():
     plt.figure(figsize=(12, 5))
     ax1 = plt.gca()
     plot_cum_sfr_vs_dist(dist)
-    plot_notable_galaxy_distances()
+    plot_notable_galaxy_distances(scale_factor=1e-3)
     ax2 = ax1.twinx()
     plot_nclusters_vs_dist(dist)
     ax3 = ax1.twiny()
@@ -150,7 +188,7 @@ def make_plot_num_clusters_estimated_from_halpha_sfr():
     plt.show()
 
 
-def make_plot_catalogued_sfr_vs_halpha_sfr():
+def make_plot_gal_ocs_catalogued_sfr_vs_halpha_sfr(savefig=False):
     """
     The red and blue lines now only show the total number of clusters that we
     expect to be able to see with MICADO. The blue line is the cumulative sum
@@ -165,7 +203,7 @@ def make_plot_catalogued_sfr_vs_halpha_sfr():
     ax1 = plt.gca()
 
     ax3 = ax1.twiny()
-    plot_spec_type_dropouts()
+    plot_spec_type_dropouts(lm=1, hm=4)
 
     ax2 = ax1.twinx()
     plot_imf_curves(plot_kroupa=True, plot_chabrier=False)
@@ -173,14 +211,51 @@ def make_plot_catalogued_sfr_vs_halpha_sfr():
     plt.sca(ax1)
     plot_literature_number_of_star_clusters(dist, offset=0)
     plot_nclusters_vs_dist(dist, offset=590)
-    plot_notable_galaxy_distances()
+    plot_notable_galaxy_distances(scale_factor=1e-3, start=3, end=-1)
     # plt.gca().xaxis.set_major_formatter(ticker.ScalarFormatter())
 
     plt.legend(loc="best", bbox_to_anchor=(0.3, 0.2))
     plt.tight_layout()
 
-    plt.savefig("young_clusters_within_2Mpc.pdf", format="pdf")
+    if savefig:
+        plt.savefig("young_clusters_within_2Mpc.pdf", format="pdf")
     plt.show()
 
 
-make_plot_catalogued_sfr_vs_halpha_sfr()
+def make_plot_with_mw_and_gal_ocs(savefig=False):
+
+    xmin=0.1
+    xmax=3000
+
+    plt.figure(figsize=(12, 5))
+    ax1 = plt.gca()
+
+    ax2 = ax1.twinx()
+    import imf
+    x = np.logspace(-3, 2, 100)
+    kroupa = imf.Kroupa(mmin=1e-3, mmax=1e1)
+
+    yk = kroupa(x) * x
+    plt.loglog(x*0.5e3, yk, c="k", ls=":", alpha=0.3)
+    plt.ylim(ymax=1)
+    plt.gca().get_yaxis().set_visible(False)
+
+    plt.sca(ax1)
+    plot_notable_galaxy_distances(end=-1)
+    plot_with_combined_mwocs_galocs_table()
+    plt.semilogx()
+    plt.xlim(0.1, 3000)
+    plt.ylim(0, 3000)
+    plt.legend(loc=2)
+
+    ax3 = ax1.twiny()
+    plot_spec_type_dropouts(xmin=xmin*1e3, xmax=xmax*1e3, lm=None)
+    plt.tight_layout()
+
+    if savefig:
+        plt.savefig("young_clusters_within_2Mpc_incl_MW.pdf", format="pdf")
+    plt.show()
+
+
+# make_plot_gal_ocs_catalogued_sfr_vs_halpha_sfr()
+make_plot_with_mw_and_gal_ocs(True)

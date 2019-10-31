@@ -144,7 +144,7 @@ contain stars brighter than K$_S$\s15\m, making deep MICADO observations of
 these regions difficult.
 
 
-\subsection{The cores densities of young star clusters}
+\subsection{The core densities of young star clusters}
 
 The second of the questions we asked with this study was ``What instrumental
 effects will play a critical role when undertaking such studies with MICADO and
@@ -170,12 +170,13 @@ the faintest stars using a rotationally broadened PSF. Further investigation is
 required to determine whether this approach would indeed increase the detection
 rate for faint stars.
 
-Although it may seem obvious, one final point is worth mentioning. From our
-simulations it is clear that resolving stellar densities of 10\h3\,\spa is well
+Although it may seem obvious, it is worth mentioning that it is clear from our
+simulations that resolving stellar densities of 10\h3\,\spa is well
 within the capabilities of MICADO. With an optimised PSF fitting and
 subtraction algorithm, extracting upwards of 5$\times$10\h3\,\spa should also
 be in the realms of possibility. 5$\times$10\h3\,\spa is equivalent to
-approximately one star in the equivalent area of \s2.5 ELT H-band PSF FWHMs.
+approximately one star in an area equivalent to \s2.5 ELT H-band PSF
+FWHMs.
 This is similar to being able to resolve every star in the core of an ONC-like
 cluster in the LMC. For JWST and HST the equivalent stellar densities are only
 160~\spa and 20~\spa respectively. Although MICADO may not have the sensitivity
@@ -184,7 +185,7 @@ core populations of dense stellar clusters in the major satellites of the
 Milky Way.
 
 
-\subsection{The cores densities of young star clusters}
+\subsection{Opportunities for future observations with MICADO and the ELT}
 
 These simulations are a nice theoretical exercise, however without an
 application to observations they are not all that useful.
@@ -224,23 +225,38 @@ cluster's IMF.
 \begin{figure*}
 
     \centering
-    \includegraphics[width=\textwidth]{images/young_clusters_within_2Mpc}
+    \includegraphics[width=\textwidth]{images/young_clusters_within_2Mpc_incl_MW}
 
-    \caption{The blue lines show the cumulative number of young clusters with
-    distance from Earth as reported in catalogues and the literature. The red
-    line shows the
-
-    that we expect to be able to see with MICADO. The blue line is the
-    cumulative sum of clusters from the literature. The red line is the
-    projected number of clusters that can be inferred to exist based on the
-    total H$\_alpha$ flux of the galaxies. The conversion is}
-
-    The dotted grey line shows a Kroupa broken power law IMF.
-
-
+    \caption{The blue line show the cumulative number of young clusters with
+    increasing distance from Earth as reported in catalogues and the literature.
+    The red dotted line shows the expected number of young clusters in a given
+    galaxy based on an extrapolation of the galaxy's total H$_\alpha$ flux. The
+    solid vertical lines represent the observational horizons for the given
+    stellar spectral types assuming a detection limit of K=28$^m$. The faint
+    dotted grey line shows a broken power-law IMF.
+    }
     \label{fig:resolved_stellar_densities}
 
 \end{figure*}
+
+
+\begin{table}[]
+    \begin{tabular}{lrrrl}
+    Name     & SFR                  & Distance  & # Clusters & Reference      \\
+             & [M$_\odot$ / yr]     & [kpc]     &            &                \\
+    MilkyWay &                      & 8         & 590        & HEASARC MWOCDB \\
+    LMC      & 0.30                 & 50        & 456        & Glatt+10       \\
+    SMC      & 0.05                 & 63        & 71         & Glatt+10       \\
+    NGC6822  & 0.01                 & 499       & 24         & Karampelas+09  \\
+    M33      & 0.36                 & 847       & 208        & Fan+14         \\
+    NGC0055  & 0.45                 & 2128      & 168        & Castro+08      \\
+    NGC0300  & 0.18                 & 2148      & 117        & Pietrzynski+01 \\
+    NGC4214  & 0.15                 & 2938      & 52         & Andrews+13     \\
+    \end{tabular}
+\end{table}
+
+
+
 
 
 
