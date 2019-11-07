@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68fb8a68-1f74-401d-9277-5ccd09528a71" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/combine_karachantsev_tables.py" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/combine_karachantsev_tables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/combined_karachentsev.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/combined_karachentsev.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_list_of_galaxies/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_list_of_galaxies/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_list_of_galaxies/table1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_list_of_galaxies/table1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_list_of_galaxies/table2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_list_of_galaxies/table2.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_list_of_galaxies/table3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_list_of_galaxies/table3.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_list_of_galaxies/table6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_list_of_galaxies/table6.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_sfr_catalogue/ReadMe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_sfr_catalogue/ReadMe.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_sfr_catalogue/table3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_sfr_catalogue/table3.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachantsev_sfr_of_galaxies.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachantsev_sfr_of_galaxies.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/karachentsev_list_of_galaxies.dat" beforeDir="false" afterPath="$PROJECT_DIR$/project/supplimentary_data/karachentsev_list_of_galaxies.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2_Observations.tex" beforeDir="false" afterPath="$PROJECT_DIR$/2_Observations.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3_Results.tex" beforeDir="false" afterPath="$PROJECT_DIR$/3_Results.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,44 +16,63 @@
     <session id="-1181514771">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
+          <entry key="tex" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="LaTeX source file" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="21" />
+          <entry key="tex" value="369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="LaTeX source file" value="369" />
           <entry key="PLAIN_TEXT" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/3_Results.tex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="105" column="61" lean-forward="true" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>increasing the</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,11 +81,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/2_Observations.tex" />
+        <option value="$PROJECT_DIR$/3_Results.tex" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="265" />
+    <option name="x" value="264" />
     <option name="y" value="129" />
     <option name="width" value="1293" />
     <option name="height" value="732" />
@@ -93,17 +104,6 @@
               <item name="SimCADO-paper-II" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimCADO-paper-II" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SimCADO-paper-II" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimCADO-paper-II" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimCADO-paper-II" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimCADO-paper-II" type="462c0819:PsiDirectoryNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="supplimentary_data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -112,7 +112,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ScopeSim-SPIE-paper" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -145,16 +145,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="-8" width="1867" height="1096" extended-state="6" />
+    <frame x="62" y="-7" width="1385" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15582286" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15578635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32952183" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952183" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -162,6 +158,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32897863" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -171,10 +171,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/2_Observations.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="224" lean-forward="true" selection-start-line="224" selection-end-line="224" />
+          <folding>
+            <element signature="e#830#836#3" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_Results.tex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="105" column="61" lean-forward="true" selection-start-line="105" selection-start-column="61" selection-end-line="105" selection-end-column="61" />
         </state>
       </provider>
     </entry>
