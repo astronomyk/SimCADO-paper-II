@@ -1,0 +1,201 @@
+J/AJ/137/94         Star clusters in M31                       (Caldwell+, 2009)
+================================================================================
+Star clusters in M31. I. A catalog and a study of the young clusters.
+    Caldwell N., Harding P., Morrison H., Rose J.A., Schiavon R., Kriessler J.
+   <Astron. J., 137, 94-110 (2009)>
+   =2009AJ....137...94C
+================================================================================
+ADC_Keywords: Galaxies, nearby ; Associations, stellar
+Keywords: catalogs - galaxies: individual (M31) - galaxies: star clusters -
+          globular clusters: general
+
+Abstract:
+    We present an updated catalog of 1300 objects in the field of M31,
+    including 670 likely star clusters of various types, the rest being
+    stars or background galaxies once thought to be clusters. The
+    coordinates in the catalog are accurate to 0.2", and are based on
+    images from the Local Group Survey (LGS) or from the Digitized Sky
+    Survey (DSS). Archival Hubble Space Telescope (HST) images and the LGS
+    were inspected to confirm cluster classifications where possible, but
+    most of the classifications are based on spectra taken of ~1000
+    objects with the Hectospec fiber positioner and spectrograph on the
+    6.5m MMT.
+
+Description:
+    The Hectospec multifiber positioner and spectrograph are ideally
+    suited for this project, in that its usable field is 1 deg in
+    diameter, and the instrument itself is mounted on the 6.5m MMT
+    telescope. We obtained data in observing runs in the years 2004-2007.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .   This file
+table1.dat     72      660   Cleaned cluster catalog
+table2.dat     66      141   Young clusters, ordered by mass
+table3.dat     61      291   Stars
+table4.dat     64      134   Possible stars
+table5.dat     47      208   Galaxies
+--------------------------------------------------------------------------------
+
+See also:
+ J/AcA/48/455  : Globular Clusters in M31 and M33 (Mochejska+, 1998)
+ J/AJ/119/727  : M31 globular clusters photometry (Barmby+, 2000)
+ J/AJ/122/2458 : M31 globular clusters from HST (Barmby+, 2001)
+ J/ApJ/559/851 : Young star cluster candidates in M31 (Williams+, 2001)
+ J/AJ/123/2490 : RV and [Fe/H] of M31 globular cluster system (Perrett+, 2002)
+ J/A+A/416/917 : M31 globular clusters Revised Bologna Catalog (Galleti+, 2004)
+ J/A+A/471/127 : New globular clusters in M31 (Galleti+, 2007)
+ J/PASP/119/7  : HST WFPC2 star clusters in M31 (Krienke+, 2007)
+
+Byte-by-byte Description of file: table1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label     Explanations
+--------------------------------------------------------------------------------
+   1- 17  A17   ---       Name      Object name
+      18  A1    ---     f_Name      [defg] Discrepent classifications (1)
+  19- 20  I2    h         RAh       Hour of Right Ascension (J2000)
+  22- 23  I2    min       RAm       Minute of Right Ascension (J2000)
+  25- 29  F5.2  s         RAs       Second of Right Ascension (J2000)
+      30  A1    ---       DE-       Sign of Declination (J2000)
+  31- 32  I2    deg       DEd       Degree of Declination (J2000)
+  34- 35  I2    arcmin    DEm       Arcminute of Declination (J2000)
+  37- 40  F4.1  arcsec    DEs       Arcsecond of Declination (J2000)
+  42- 46  F5.2  mag       Vmag      ? V band magnitude
+  48- 51  F4.2  mag     e_Vmag      ? Uncertainty in Vmag
+  53- 58  A6    ---       Type      Rough age classification (2)
+  60- 61  A2    ---       sV        Source of velocity (3)
+  63- 66  F4.1  arcsec  a_Vmag      ? Aperture size for Vmag observation
+      68  A1    ---       sP        Source of photometry (G4)
+  70- 72  A3    ---       sC        Source of classification as cluster (5)
+--------------------------------------------------------------------------------
+Note (1): Flag on Name, defined as follows:
+    d = not a cluster in Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727)
+    e = not a cluster in Crampton et al. (1985ApJ...288..494C)
+    f = not a cluster in Racine (1991AJ....101..865R)
+    g = Dubath & Grillmair (1997A&A...321..379D) probably observed a different
+        object
+Note (2): For objects with good quality spectra.
+    young = age less than 1Gyr
+   interm = age between 1 and 2Gyr
+      old = age greater than 2Gyr
+Note (3): Source of velocity, defined as follows:
+   HS = this paper
+    B = Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727)
+    P = Perrett et al. (2002AJ....123.2490P, Cat. J/AJ/123/2490)
+Note (5): objects with blank entries in this column and in the velocity source
+          column should still be considered "candidates". Flags as follows:
+    S = spectrum from this paper indicates a cluster
+    L = LGS image indicates non-stellar
+    H = HST image indicates a cluster
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label    Explanations
+--------------------------------------------------------------------------------
+   1- 17  A17   ---       Name     Object name
+  19- 27  A9    ---     f_Name     Discrepent classification (1)
+  29- 32  F4.2  mag       E(B-V)   Reddening toward cluster
+  34- 39  F6.1  km/s      Vel      Cluster velocity
+  41- 42  I2    km/s    e_Vel      Uncertainty in Vel
+  44- 46  F3.1  [yr]      logAge   Log of cluster age
+  48- 50  F3.1  [Msun]    logM     Log of cluster mass
+  52- 54  F3.1  ---       chi2     Fitting procedure {chi}^2^
+  56- 66  A11   ---       Com      Additional comment(s)
+--------------------------------------------------------------------------------
+Note (1): Flag on Name, defined as follows:
+    a = Not a cluster in Cohen et al. (2005ApJ...634L..45C)
+    b = Star in field
+    c = Noted as young in van den Bergh (1969ApJS...19..145V)
+    d = Noted as young in Hodge (1979AJ.....84..744H)
+    e = Noted as young in Elson & Walterbos (1988ApJ...333..594E)
+    f = Noted as young in Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727)
+    g = Noted as young in Fusi Pecci et al. (2005AJ....130..554F)
+    h = Noted as young in Burstein et al. (2004ApJ...614..158B)
+    i = Noted as young in Beasley et al. (2004AJ....128.1623B)
+    j = Noted as young in Williams & Hodge (2001ApJ...559..851W,
+         Cat. J/ApJ/559/851)
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table[34].dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label     Explanations
+--------------------------------------------------------------------------------
+   1- 10  A10   ---       Name      Object name (1)
+      12  A1    ---     f_Name      [efgh] Discrepent classification (2)
+      14  I1    h         RAh       Hour of Right Ascension (J2000)
+  16- 17  I2    min       RAm       Minute of Right Ascension (J2000)
+  19- 23  F5.2  s         RAs       Second of Right Ascension (J2000)
+      24  A1    ---       DE-       Sign of Declination (J2000)
+  25- 26  I2    deg       DEd       Degree of Declination (J2000)
+  28- 29  I2    arcmin    DEm       Arcminute of Declination (J2000)
+  31- 34  F4.1  arcsec    DEs       Arcsecond of Declination (J2000)
+  36- 41  F6.1  km/s      Vel       ? Velocity from Hectospec
+  43- 44  I2    km/s    e_Vel       ? Uncertainty in Vel
+  46- 50  F5.2  mag       Vmag      ? V band magnitude
+  52- 55  F4.2  mag     e_Vmag      ? Uncertainty in Vmag
+      57  A1    ---       sP        Source of photometry (G4)
+  59- 61  A3    ---       sC        Source of classification as a star (G5)
+  63- 64  A2    ---       sV        Source of velocity, only for table4.dat (3)
+--------------------------------------------------------------------------------
+Note (1): The suffix "x" indicates that coords correspond to a real object,
+           but which was wrongly identified in the initial input catalog.
+Note (2): Flag on Name, defined as follows:
+    e = NB61 is an M star, the velocity of -646 listed in Galleti et al.
+         (2007A&A...471..127G, Cat. J/A+A/471/127)
+        was likely the result of a velocity template mismatch.
+    f = Multiple stars or asterisms in M31.
+    g = The velocity of this F supergiant star indicates is it probably a
+        member of the M31 giant stream. Details to be presented in a
+        subsequent paper.
+    h = The colors of SK106A indicate it is an M star, the velocity of
+        -890 km/s reported in Kim et al. (2007AJ....134..706K, Cat.
+        J/AJ/134/706) was likely the result of a velocity template mismatch
+        (see also Lee et al. 2008ApJ...674..886L).
+Note (3): Source of velocity, defined as follows:
+   HS = this paper
+    B = Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727)
+    K = Kim et al. (2007, Cat. J/AJ/134/706)
+    P = Perrett et al. (2002AJ....123.2490P, Cat. J/AJ/123/2490)
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table5.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 15  A15   ---     Name      Object name
+      17  A1    ---   f_Name      [b] Discrepent class (1)
+      19  I1    h       RAh       Hour of Right Ascension (J2000)
+  21- 22  I2    min     RAm       Minute of Right Ascension (J2000)
+  24- 28  F5.2  s       RAs       Second of Right Ascension (J2000)
+      29  A1    ---     DE-       Sign of Declination (J2000)
+  30- 31  I2    deg     DEd       Degree of Declination (J2000)
+  33- 34  I2    arcmin  DEm       Arcminute of Declination (J2000)
+  36- 39  F4.1  arcsec  DEs       Arcsecond of Declination (J2000)
+  41- 47  F7.5  ---     z         ? Hectospec redshift (2)
+--------------------------------------------------------------------------------
+Note (1): Perrett et al. (2002AJ....123.2490P, Cat. J/AJ/123/2490) had
+     velocity indicating M31 membership.
+Note (2): All redshifts from Hectospec. Median velocity error is 17km/s.
+     Entries without redshifts were classified background based on images.
+--------------------------------------------------------------------------------
+
+Global Notes:
+Note (G4): Source of photometry, defined as follows:
+    L = this paper;
+    B = Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727)
+    G = Galleti et al. (2007A&A...471..127G, Cat. J/A+A/471/127)
+    H = Huxor et al. (2005MNRAS.360.1007H)
+Note (G5): Source of classification as a star, defined as follows:
+    S = spectrum from this paper exists, indicates a star or is inconclusive
+    L = LGS image indicates stellar FWHM
+    B = Barmby et al. (2000AJ....119..727B, Cat. J/AJ/119/727) indicated a star
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+
+================================================================================
+(End)                   Greg Schwarz [AAS], Marianne Brouty [CDS]    22-Jun-2011

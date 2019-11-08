@@ -1,0 +1,106 @@
+J/A+A/517/A50  Ages & luminosities of young SMC/LMC star clusters (Glatt+, 2010)
+================================================================================
+Ages and luminosities of young SMC/LMC star clusters and the recent star
+formation history of the Clouds.
+    Glatt K., Grebel E.K., Koch A.
+   <Astron. Astrophys. 517, A50 (2010)>
+   =2010A&A...517A..50G
+================================================================================
+ADC_Keywords: Magellanic Clouds ; Associations, stellar ; Magnitudes
+Keywords: Magellanic Clouds - galaxies: clusters: general -
+          galaxies: evolution
+
+Abstract:
+    In this paper we discuss the age and spatial distribution of young
+    (age<1Gyr) SMC and LMC clusters using data from the Magellanic Cloud
+    Photometric Surveys. Luminosities are calculated for all age-dated
+    clusters. Ages of 324 and 1193 populous star clusters in the Small and
+    the Large Magellanic Cloud have been determined fitting Padova and
+    Geneva isochrone models to their resolved color-magnitude diagrams.
+    The clusters cover an age range between 10Myr and 1Gyr in each galaxy.
+    For the SMC a constant distance modulus of (m-M)_0_=18.90 and a
+    metallicity of Z=0.004 were adopted. For the LMC, we used a constant
+    distance modulus of (m-M)_0_=18.50 and a metallicity of Z=0.008.
+    For both galaxies, we used a variable color excess to derive the
+    cluster ages. We find two periods of enhanced cluster formation in
+    both galaxies at 160Myr and 630Myr (SMC) and at 125Myr and 800Myr
+    (LMC). We present the spatially resolved recent star formation history
+    of both Clouds based on young star clusters. The first peak may have
+    been triggered by a close encounter between the SMC and the LMC. In
+    both galaxies the youngest clusters reside in the supergiant shells,
+    giant shells, the inter-shell regions, and toward regions with a high
+    H\alpha content, suggesting that their formation is related to
+    expansion and shell-shell interaction. Most of the clusters are older
+    than the dynamical age of the supergiant shells. No evidence for
+    cluster dissolution was found. Computed V band luminosities show a
+    trend for fainter magnitudes with increasing age as well as a trend
+    for brighter magnitudes with increasing apparent cluster radii.
+
+Description:
+    Ages and luminosities for 324 SMC and 1193 LMC star clusters. For each
+    star cluster reddening, radius, log(age(yr)), age uncertainties, right
+    ascension, declination, V-band magnitudes, error(V), and
+    cross-identification are given.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName  Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe        80        .   This file
+lmc.dat      111     1194   LMC cluster ages, luminosities, reddenings,
+                             radii, cross-identifications
+smc.dat       98      322   SMC cluster ages, luminosities, reddenings,
+                             radii, cross-identifications
+--------------------------------------------------------------------------------
+
+See also:
+ J/A+AS/110/533   : Clusters and field stars in LMC. I. (Linde+, 1995)
+ J/AJ/116/723     : LMC star clusters ages and metallicity (Bica+ 1998)
+ J/AcA/49/521     : OGLE LMC star clusters BVI photometry (Pietrzynski+, 1999)
+ J/MNRAS/386/1380 : BVRI photometry of LMC star clusters (Kumar+, 2008)
+ J/A+A/501/585    : CT1 photometry in five LMC star clusters (Piatti+, 2009)
+ J/A+A/503/469    : Compact clusters in LMC catalogue of stars (Liu+, 2009)
+
+Byte-by-byte Description of file: lmc.dat smc.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  7  A7    ---     Name      Identification number (LMCNNNN or SMCNNNN)
+       8  A1    ---   n_Name      [*] Note on Name (1)
+  10- 14  F5.3  mag     E(B-V)    Foreground reddening
+  16- 20  F5.3  arcmin  R         Radius (2)
+      22  A1    ---   l_Age       Limit flag on log(Age)
+  23- 26  F4.2  [yr]    Age       Cluster age in logarithmic scale
+      27  A1    ---     ---       [/]
+  28- 31  F4.2  [yr]    Age2      ? Second value of cluster age in
+                                    logarithmic scale
+      33  I1    ---   q_Age       ?=- Class for Age uncertainties (3)
+      36  I1    h       RAh       Right ascension (J2000)
+  38- 39  I2    min     RAm       Right ascension (J2000)
+  41- 42  I2    s       RAs       [0/60] Right ascension (J2000)
+      44  A1    ---     DE-       Declination sign (J2000)
+  45- 46  I2    deg     DEd       Declination (J2000)
+  48- 49  I2    arcmin  DEm       Declination (J2000)
+  51- 52  I2    arcsec  DEs       [0/60] Declination (J2000)
+  54- 59  F6.3  mag     Vmag      V-band magnitude
+  61- 64  F4.2  mag   e_Vmag      Uncertainties of V-band magnitude
+  66-111  A46   ---     Cross-ID  Cross-Identification(s)
+--------------------------------------------------------------------------------
+Note (1): Identification numbers with an asterix are possible double/multiple
+           populations (Dieball et al., 2002, Cat. J/A+A/391/547)
+Note (2): Radii adopted from Bica et al., 2008, Cat. J/MNRAS/389/678.
+Note (3): Class code as follows:
+      1 = objects having {Delta}(log(age(yr)))<0.3
+      2 = objects having 0.3 <{Delta}(Log(Age(yr)))<0.5
+      3 = objects having {Delta}(Log(Age(yr)))>0.5
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    Katharina Glatt, kglatt(at)ari.uni-heidelberg.de
+
+History:
+    * 09-Aug-2010: Original version
+    * 05-Apr-2011: some names corrected
+
+================================================================================
+(End)                                        Patricia Vannier [CDS]  08-Apr-2010

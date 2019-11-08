@@ -1,0 +1,31 @@
+# For ages < 100 Myr, i.e. B-star lifetime
+# Otherwise it's not an initial mass function estimate
+|    Name    |  SFRa | Dist  | Num_Clust | Reference      |
+|   MilkyWay |   0.6 | 0.008 |       590 | Scholz+15      |
+|        LMC | -0.52 |  0.05 |       456 | Glatt+10       |
+|        SMC | -1.34 | 0.063 |        71 | Glatt+10       |
+|    NGC6822 | -1.94 | 0.499 |        24 | Karampelas+09  | # Only OB assocs
+| MESSIER033 | -0.44 | 0.847 |       208 | Fan+14         |
+|    NGC3109 | -1.77 | 1.324 |           |                |
+|    NGC0055 | -0.35 | 2.128 |       168 | Castro+08      | # Based on positions of massive blue stars
+|    NGC0300 | -0.75 | 2.148 |       117 | Pietrzynski+01 |
+|     IC4662 | -1.16 | 2.443 |           |                |
+|    NGC4214 | -0.83 | 2.938 |        52 | Andrews+13     |
+
+
+
+\begin{table}[]
+\begin{tabular}{lllll}
+Name     & SFR                  & Distance  & # Clusters & Reference      \\
+         & [M$_\odot$ / yr]     & [kpc]     &            &                \\
+MilkyWay &                      & 8         & 590        & HEASARC MWOCDB \\
+LMC      & 0.30                 & 50        & 456        & Glatt+10       \\
+SMC      & 0.05                 & 63        & 71         & Glatt+10       \\
+NGC6822  & 0.01                 & 499       & 24         & Karampelas+09  \\
+M33      & 0.36                 & 847       & 208        & Fan+14         \\
+NGC0055  & 0.45                 & 2128      & 168        & Castro+08      \\
+NGC0300  & 0.18                 & 2148      & 117        & Pietrzynski+01 \\
+NGC4214  & 0.15                 & 2938      & 52         & Andrews+13     \\
+\end{tabular}
+\end{table}
+
