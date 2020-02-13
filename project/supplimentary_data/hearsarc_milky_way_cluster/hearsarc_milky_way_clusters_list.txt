@@ -1,4 +1,5 @@
 # Results from heasarc_mwsc : Milky Way Star Clusters Catalog
+# Citation: Kharchenko+2013
 # Coordinate system :  Equatorial
 # source :  https://heasarc.gsfc.nasa.gov/db-perl/W3Browse/w3table.pl?tablehead=name%3Dmwsc&Action=More+Options
 # notes : queried for Dec < +35 deg
