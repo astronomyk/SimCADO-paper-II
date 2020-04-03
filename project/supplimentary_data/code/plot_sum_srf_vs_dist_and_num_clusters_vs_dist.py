@@ -70,7 +70,7 @@ def plot_cum_sfr_vs_dist(dist):
 
 def plot_nclusters_vs_dist(dist, scale_factor=1520, offset=0):
     csfr = np.array([cum_sfr(d) for d in dist])
-    nclust = csfr * scale_factor + offset     # Caldwall 2009, 140 young clusters in M31 @ 0.5 Msun/yr
+    nclust = csfr * scale_factor + offset     # Caldwell 2009, 140 young clusters in M31 @ 0.5 Msun/yr
 
     plt.plot(dist, nclust, "r--", label="$H_{\\alpha}$ Projection")
     log_scale()
