@@ -7,7 +7,8 @@
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
 \usepackage{verbatim}
-%\usepackage{upgreek}
+\usepackage{textcomp}
+\usepackage{textgreek}
 
 %________________________________________________________________
 
@@ -22,6 +23,9 @@
 \newcommand{\h}[1]{$^{#1}$}
 \newcommand{\spa}{stars arcsec$^{-2}$~}
 \newcommand{\spae}{stars arcsec$^{-2}$}
+\newcommand{\needcite}{\colorbox{black}{\textcolor{yellow}{\textbf{Citation?}}}}
+\newcommand{\correct}{\colorbox{red}{\textcolor{white}{\textbf{Correct?}}}}
+\newcommand{\rewrite}{\colorbox{blue}{\textcolor{white}{\textbf{Re-write}}}}
 
 
 %________________________________________________________________
@@ -61,7 +65,7 @@
 \bibliographystyle{aa}
 \bibliography{imf_refs}
 
-\appendix
+% \appendix
 \input{7_Appendix}
 
 %________________________________________________________________
