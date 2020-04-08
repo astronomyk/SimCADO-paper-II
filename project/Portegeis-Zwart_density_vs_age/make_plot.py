@@ -4,7 +4,7 @@ from matplotlib.colors import LogNorm
 from astropy.io import ascii
 from astropy import units as u
 
-from ..simcado_sandbox import imf
+from project.simcado_sandbox import imf
 
 
 def king_profile_core_fraction(r_core, r_eff):
@@ -117,11 +117,11 @@ for i in [4, 0, 11, 1]:
             plt.text(age[i], rho[i], "    " + names[i] + "   ", fontsize=8,
                      rotation=45, verticalalignment="bottom",
                      horizontalalignment="left")
-
-wavelength = 1.2
+n_fwhm = 2.5
+wavelength = 1.6
 for t, ap in zip(["ELT / MICADO", "JWST / NIRCam", "HST / WFC3-IR"],
                  [38, 6.5, 2.5]):
-    y = (2.5 * telescope_diffraction_limit(ap, wavelength)) ** -2
+    y = (n_fwhm * telescope_diffraction_limit(ap, wavelength)) ** -2
     plt.axhline(y, ls=":", c="k")
     plt.text(1.1E0, 1.1 * y, t, color="gray", verticalalignment="bottom",
              fontsize=14)
