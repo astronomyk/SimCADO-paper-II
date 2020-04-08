@@ -66,34 +66,39 @@ def plot_cluster_hdus():
         vmin = np.min(im)
         vmax = 100 * np.median(im)
 
-        plt.subplot(2, 5, 1 + ii)
-        plt.imshow(im, norm=LogNorm(), vmin=vmin, vmax=vmax,
+        cax = plt.axes([0 + 0.2*ii, 0.5, 0.2, 0.5])
+        # plt.subplot(2, 5, 1 + ii)
+        cax = plt.gca()
+        cax.imshow(im, norm=LogNorm(), vmin=vmin, vmax=vmax,
                    cmap=cmap, origin="lower")
 
-        plt.text(200, 3700, f"{dists[ii]} kpc", color="w",
+        cax.text(200, 3700, f"{dists[ii]} kpc", color="w",
                  horizontalalignment="left", fontsize=14)
-        plt.axis("off")
+        cax.axis("off")
 
-        plt.plot([1, 1798, 1798, 2298, 2298, 1798, 2298, 4095],
+        cax.plot([1, 1798, 1798, 2298, 2298, 1798, 2298, 4095],
                  [1, 2298, 1798, 1798, 2298, 2298, 2298, 1], c="w", lw=1)
 
         if ii == 4:
-            plt.plot([3840, 3840], [2048-1250, 2048+1250], c="w", lw=3)
-            plt.text(3760, 2048, '10"', fontsize=14, color="w",
+            cax.plot([3840, 3840], [2048-1250, 2048+1250], c="w", lw=3)
+            cax.text(3760, 2048, '10"', fontsize=14, color="w",
                      horizontalalignment="right", verticalalignment="center")
+
+        # plt.subplot(2, 5, 6 + ii)
+        # cax = plt.gca()
+        cax = plt.axes([0 + 0.2*ii, 0.0, 0.2, 0.5])
 
         m, d = 2048, 250
-        plt.subplot(2, 5, 6 + ii)
-        plt.imshow(im[m - d:m + d, m - d:m + d], norm=LogNorm(), vmin=vmin,
+        cax.imshow(im[m - d:m + d, m - d:m + d], norm=LogNorm(), vmin=vmin,
                    vmax=vmax, cmap=cmap, origin="lower")
 
-        plt.axis("off")
+        cax.axis("off")
         if ii == 4:
-            plt.plot([480, 480], [125, 375], c="w", lw=3)
-            plt.text(470, 250, '1"', fontsize=14, color="w",
+            cax.plot([480, 480], [125, 375], c="w", lw=3)
+            cax.text(470, 250, '1"', fontsize=14, color="w",
                      horizontalalignment="right", verticalalignment="center")
 
-    plt.subplots_adjust(wspace=0., hspace=0.)
+    # plt.subplots_adjust(wspace=0., hspace=0.)
 
 # make_cluster_hdus(exptime=60)
 plot_cluster_hdus()
