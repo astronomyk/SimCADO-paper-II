@@ -5,10 +5,10 @@
 \begin{figure*}
 
     \centering
-    \includegraphics[width=0.9\textwidth]{images/5_clusters.pdf}
+    \includegraphics[width=\textwidth]{images/5_clusters.pdf}
 
-    \caption{\rewrite REMAKE IMAGES WITH EXTENDED PSF-FILE
-    An illustration of the data set we used for this study. The young massive cluster depicted here contains a mass of 2$\times$10$^4$\,\msun and has a half-light radius of 1\,pc. It was observed with the MICADO instrument simulator at distances from 8\,kpc to 800\,kpc. The top row shows the cluster as seen by the centre detector of MICADO. The bottom row shows a 2``$\times$2`` window (512$\times$512 pixels) at the centre of this detector, corresponding to the area we used for our study.}
+    \caption{An illustration of the data set we used for this study. The young massive cluster depicted here contains a mass of 2$\times$10$^4$\,\msun and has a half-light radius of 1\,pc. It was observed with the MICADO instrument simulator at distances from 8\,kpc to 800\,kpc. The top row shows the cluster as seen by the centre detector of MICADO. The bottom row shows a 2``$\times$2`` window (512$\times$512 pixels) at the centre of this detector, corresponding to the area we used for our study. \rewrite ASK MAORY ABOUT NEW PSF - REDO WITH CLENET PSF
+    }
     
     \label{fig:5_clusters}
     
@@ -24,6 +24,7 @@
     The diagonal bands show the range of core stellar densities for the three major categories of young stellar populations: young massive clusters (orange), open clusters (green), and OB associations (blue). 
     The vertical lines represent the furthest distance at which a certain type of main sequence star will still be above the detection limit of MICADO, i.e. Ks=28\m.
     The dashed horizontal lines show the theoretical confusion limit for MICADO/ELT, JWST, HST and an instrument similar to NACO/VLT. The confusion limit assumes an average minimum distance of 2$\times$ the PSF FWHM between stars.
+    \rewrite REMOVE excess crossed
     }
     
     \label{fig:resolved_stellar_densities}
@@ -33,15 +34,15 @@
 
 The most reliable way to determine the IMF is to look at a population of stars which is still young enough for all the original members to still be around, yet old enough that the main phase of star formation activity has ceased. 
 If a population is too young, it will not have finished forming all its stars and dust extinction will be a major source of uncertainty and incompleteness. Too old and the most massive members will already have exploded as supernovae. 
-Dynamical effects will also have led to evaporation of stars from the cluster, posing a problem to IMF completeness.
+Dynamical effects will also have lead to evaporation of stars from the cluster, posing a problem to IMF completeness.
 Unfortunately such ideal conditions are rarely observed. 
 Star formation happens on time scales of 10\h6 years. 
 The most massive stars burn their hydrogen reserves within the first several ten million years and move off the main sequence\needcite. 
 Given that the dispersion time for stellar clusters is on the order of hundreds of millions of years, at any point in time relatively few of the observable new clusters will be found in the ideal age range (between 5 and 20\,Myr) for studying the IMF\needcite. 
 The majority of IMF studies focus on the clusters which come closest to meeting these conditions - namely the cores of open clusters (OC) and young massive clusters (YMC)\needcite. 
 It should be mentioned that OB associations also provide a laboratory for studying the IMF. 
-However as these are older and in many cases more spread out, the chances of contamination from background sources and missing ejected stars is higher\needcite\correct. 
-Furthermore, the high mass end of the IMF cannot be reliably observed as the highest mass stars have already left the main sequence, and some have ended as supernova\correct.
+However as these are older and in many cases more spread out, the chances of contamination from background sources and missing ejected stars is higher\needcite. 
+% Furthermore, the high mass end of the IMF cannot be reliably observed as the highest mass stars have already left the main sequence, and some have ended as supernova\correct.
 
 
 \subsection{Parameter Space}
@@ -56,7 +57,7 @@ Thus we set the upper limit for the true cluster stellar density to 3$\times$10\
 
 Current telescopes are capable of detecting almost all main sequence stars above the hydrogen burning limit (\s0.08\,\msune) within a few kiloparsecs of the Sun\needcite. 
 Detecting all main sequence stars in clusters further afield, e.g. in the galactic centre and beyond, is where MICADO's increased sensitivity and resolution will bring the greatest breakthroughs. 
-Indeed the question of whether the IMF is truly universal\correct dictates that we study the IMF outside the Milky Way. 
+Indeed the question of whether the IMF is truly universal dictates that we study the IMF outside the Milky Way. 
 Therefore we placed our model proxy-clusters at distances corresponding to some of the more well known celestial landmarks: The Galactic Centre (\s8\,kpc), the LMC (\s50\,kpc), Leo I dwarf galaxy (\s200\,kpc), M33 (\s800\,kpc)\footnote{The author recognises that the location of the ELT in the southern hemisphere is unfavourable for effectively observing M33. We provide this data point because M33 will, with luck, be visible to the Thirty Meter Telescope.}, NGC 300 (\s2\,Mpc), and Cen A (\s5\,Mpc). 
 Figure \ref{fig:resolved_stellar_densities} shows the parameter space covered by open clusters of average mass (\s1000\,\msun) with radii between 0.1\,pc and 3\,pc and OB Associations of average mass (\s5000\,\msun) with radii between 10\,pc and 100\,pc as distance from Earth increases. 
 The lower bounds of the open cluster parameter space also covers the cores of YMCs. Average cluster properties were derived for the OB Associations from \citet{melnik1995}, for the open clusters from \citet{piskunov2007}, and for the YMCs from \citet{portegies2010}.
@@ -124,7 +125,7 @@ We calculated the mass of each star based on the observed fluxes in the K$_S$ fi
 This step is only permissible because of the simplified context of this study. 
 We were free to equate the luminosity function with an equivalent mass function because all our stellar fields have the intrinsic property that they only contain main sequence stars and the luminosity and mass functions enjoy a one-to-one relationship for this conversion in the K$_S$ filter, mathematically speaking. 
 Furthermore, our primary goal is to determine what the lowest reliably observable mass is, based on how well MICADO will perform in crowded fields - not to directly measure the mass of the original stars. 
-We are confident that this step does not significantly detract from achieving the goal of this study\correct.
+We are confident that this step does not significantly detract from achieving the goal of this study.
 
 % We fitted the gaussian by flattening the star and the control star arrays, then doing linear regression to find the slope and intercept. We did this using scipy thielslope
 
