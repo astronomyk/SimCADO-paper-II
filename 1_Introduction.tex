@@ -53,15 +53,14 @@ In the middle of the next decade, the era of the extremely large telescopes will
 ESO's Extremely Large Telescope (ELT) \citep{eelt} with the help of advanced adaptive optics \citep{maory} will have the power to resolve spatial scales at the diffraction limit of a 40m-class mirror. This will provide an improvement of a factor of \s15$\times$ over HST and a factor of \s6$\times$ over the future JWST telescope. 
 With a collecting area of 978\,m\h2 the ELT will have at least the same sensitivity as the HST in sparse field and will be able to observe much deeper than HST in crowded fields. 
 The MICADO instrument \citep{micado, micado2016} will be the ELT's first-light near-infrared (NIR) wide-field imager and long slit spectrograph. 
-With a diffraction limit of 7\,mas at 1.2\um and an AO corrected field of view of almost a square arcminute, MICADO will be perfectly suited to address exactly this niche. 
+With a diffraction limit of 7\,mas at 1.2\um and an AO corrected field of view of almost a square arcminute, MICADO will be perfectly suited to address exactly the IMF science case. 
 
-The main focus of this paper is to determine to what extent MICADO will improve our ability to study the IMF and other properties of dense stellar populations is the main focus of this paper. 
-In this paper we have attempted to addressed the following two questions: What is the lowest mass star that MICADO will be able to observe for a given density and distance?
+The main focus of this paper is to determine to what extent MICADO will improve our ability to study the IMF and other properties of dense stellar populations. More precisely, we have attempted to addressed the following two questions: 1) What is the lowest mass star that MICADO will be able to observe for a given density and distance? 2)
 What instrumental effects will play a critical role when undertaking such studies with MICADO and the ELT?
 %How crowded can a region be for MICADO to still be able to detect 90\% of the stars above the detection limit? 
-In our quest for answers we used SimCADO, the instrument data simulator for MICADO \citep{leschinski2016}, to simulate a wide range of densely populated stellar fields at various distances. 
+In our quest for answers we used SimCADO, \textcolor{red}{REF Leschinski et al. in prep.} the instrument data simulator for MICADO \citep{leschinski2016}, to simulate a wide range of densely populated stellar fields at various distances. 
 The current version of SimCADO takes into account all the major and most of the minor spatial and spectral effects along the line of sight between the source and the detector. 
-We used the software to generate realistic images of our model stellar fields and  conducted several iterations of PSF photometry and star subtraction to extract as many stars as possible from the simulated observations. 
+We use the software to generate realistic images of model stellar fields and  conduct several iterations of PSF photometry and star subtraction to extract as many stars as possible from the simulated observations. 
 The extracted stars were compared with the input catalogue to determine the completeness of the extraction and to define a ``limiting reliably observable mass'' for the different stellar field densities and distances.
 
 This paper is organised in the following way: Section \ref{sec:observations} describes the stellar fields used in our simulations, how the simulations were run, and also describe the algorithm for detecting and subtracting stars in the simulated images. 
