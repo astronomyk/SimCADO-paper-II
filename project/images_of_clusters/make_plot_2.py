@@ -11,7 +11,7 @@ def make_cluster_hdus(mass=2E4, half_light_radius=1, exptime=3600, show=False):
 
     cmd = sim.UserCommands()
     cmd["OBS_EXPTIME"] = exptime
-    # cmd["SCOPE_PSF_FILE"] = "PSF_MAORY_SCAO_Ks_2.fits"
+    cmd["SCOPE_PSF_FILE"] = "PSF_MAORY_SCAO_Ks_2.fits"
     cmd["INST_FILTER_TC"] = "Ks"
     cmd["FPA_LINEARITY_CURVE"] = "none"
     cmd["FPA_USE_NOISE"] = "no"
@@ -100,7 +100,7 @@ def plot_cluster_hdus():
 
     # plt.subplots_adjust(wspace=0., hspace=0.)
 
-# make_cluster_hdus(exptime=60)
+make_cluster_hdus(exptime=60)
 plot_cluster_hdus()
 
 plt.savefig("5_clusters.png", format="png")
