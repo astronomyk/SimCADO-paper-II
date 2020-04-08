@@ -1,5 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
+from astropy.io import ascii
+
 
 plt.figure(figsize=(10,5))
 
@@ -16,6 +18,7 @@ plt.plot([10**(mu-sig), 10**(mu-sig)], [0,100], "k--", alpha=0.5)
 plt.plot([10**(mu+sig), 10**(mu+sig)], [0,100], "k--", alpha=0.5)
 plt.text(10**(mu-sig)*1.05, 20, "-1$\sigma$ = "+str(10**(mu-sig))[:4]+" pc", rotation=90, horizontalalignment="left" )
 plt.text(10**(mu+sig)*1.05, 20, "1$\sigma$ = "+str(10**(mu+sig))[:4]+" pc", rotation=90, horizontalalignment="left" )
+
 
 #------------
 
@@ -40,6 +43,6 @@ plt.xlim(4E-1, 2E2)
 plt.ylim(0, 35)
 plt.legend()
 plt.ylabel("Number of clusters")
-plt.xlabel("Diameter of cluster [pc]")
+plt.xlabel("Core readius of cluster [pc]")
 
 plt.show()
