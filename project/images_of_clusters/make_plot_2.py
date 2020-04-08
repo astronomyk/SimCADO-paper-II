@@ -61,7 +61,7 @@ def plot_cluster_hdus():
 
     plt.figure(figsize=(15, 6.03))
     for ii, fname in enumerate(np.array(fnames)[jj]):
-        cmap = "hot"
+        cmap = "afmhot"
         im = fits.getdata(fname)
         vmin = np.min(im)
         vmax = 100 * np.median(im)
@@ -100,7 +100,7 @@ def plot_cluster_hdus():
 
     # plt.subplots_adjust(wspace=0., hspace=0.)
 
-make_cluster_hdus(exptime=60)
+#make_cluster_hdus(exptime=60)
 plot_cluster_hdus()
 
 plt.savefig("5_clusters.png", format="png")
