@@ -5,13 +5,15 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 
 import simcado as sim
+from anisocado import AnalyticalScaoPsf
 
 
 def make_cluster_hdus(mass=2E4, half_light_radius=1, exptime=3600, show=False):
 
     cmd = sim.UserCommands()
     cmd["OBS_EXPTIME"] = exptime
-    cmd["SCOPE_PSF_FILE"] = "PSF_MAORY_SCAO_Ks_2.fits"
+    # cmd["SCOPE_PSF_FILE"] = "PSF_MAORY_SCAO_Ks_2.fits"
+    cmd["SCOPE_PSF_FILE"] = "Default_PSF_SCAO.fits"
     cmd["INST_FILTER_TC"] = "Ks"
     cmd["FPA_LINEARITY_CURVE"] = "none"
     cmd["FPA_USE_NOISE"] = "no"
@@ -30,14 +32,17 @@ def make_cluster_hdus(mass=2E4, half_light_radius=1, exptime=3600, show=False):
     d = np.array([8.5E3, 20E3, 50E3, 200E3, 800E3])
     dist_mods = 5 * np.log10(d) - 5
 
-    plt.figure(figsize=(15, 5))
+    if show: plt.figure(figsize=(15, 5))
 
     for ii, dist_mod in enumerate(dist_mods):  # GC=14.5, LMC=18.5, Leo I=21.5, M31=24.5
 
         dist = 10 ** (1 + dist_mod / 5)
         cluster.x = x_orig * dist_orig / dist
         cluster.y = y_orig * dist_orig / dist
-        cluster.weight = f_orig * (dist_orig / dist)**2
+        scale = f_orig * (dist_orig / dist)**2
+        threshold = 0.000003
+        scale[scale > threshold] = threshold
+        cluster.weight = scale
 
         cluster.apply_optical_train(opt, fpa)
         hdu = fpa.read_out(OBS_EXPTIME=exptime, filename=f"{int(dist)}kpc_{int(mass)}Msun.fits")
@@ -46,8 +51,7 @@ def make_cluster_hdus(mass=2E4, half_light_radius=1, exptime=3600, show=False):
             plt.subplot(1, 5, ii+1)
             plt.imshow(hdu[0].data, norm=LogNorm(), vmin=1.61E5, vmax=1.8E5)
 
-    if show:
-        plt.show()
+    if show: plt.show()
 
 
 def plot_cluster_hdus():
@@ -59,12 +63,11 @@ def plot_cluster_hdus():
     fnames = glob("*Msun.fits")
     jj = np.argsort([int(f.split("kpc")[0]) for f in fnames])
 
-    plt.figure(figsize=(15, 6.03))
     for ii, fname in enumerate(np.array(fnames)[jj]):
         cmap = "afmhot"
         im = fits.getdata(fname)
         vmin = np.min(im)
-        vmax = 100 * np.median(im)
+        vmax = 50 * np.median(im)
 
         cax = plt.axes([0 + 0.2*ii, 0.5, 0.2, 0.5])
         # plt.subplot(2, 5, 1 + ii)
@@ -100,7 +103,9 @@ def plot_cluster_hdus():
 
     # plt.subplots_adjust(wspace=0., hspace=0.)
 
-#make_cluster_hdus(exptime=60)
+plt.figure(figsize=(15, 6.03))
+
+# make_cluster_hdus(exptime=60) - images are good now
 plot_cluster_hdus()
 
 plt.savefig("5_clusters.png", format="png")
