@@ -98,7 +98,7 @@
 
 \begin{figure*}
     \centering
-    \includegraphics[width=\textwidth]{images/results6_dist=50000_rho=1000}
+    \includegraphics[width=\textwidth]{images/tbl_stats_dist=50000_rho=1000.pdf}
     \caption{Results of extracting stars from a 1000\,\spa cluster at a distance of 50\,kpc. Top left: The original 2''$\times$2'' stellar field with a density of 10\h3~\spa. The stars in the field have masses between 0.01\,\msun and 300\,\msune. The PSF used in this study was an instantaneous SCAO PSF, similar to what would be seen on a single MICADO detector 2.6\,s exposure. Top right: The same field after our detection and subtraction algorithm has iteratively removed all the stars. 10\h3~\spa are extracted reasonably easily by our algorithm. Bottom left: The fraction of extracted stars in each mass bin which matched up with the original list of stars. The majority of stars more massive than 0.1\,\msun were detected. Bottom right: The upper panel shows the ratio of extracted mass to original mass. The vast majority (\s97\%) of the almost 4000 stars in the image fell almost perfectly on the red one-to-one line. The minor scatter around the line is due to a combination of our detection algorithm not being able to discern between to very close stars, and contamination for the PSF artefacts, e.g. the segmented diffraction spikes. The lower panel shows the standard deviation of masses around the one-to-one line in a certain mass bin. A mass bin was deemed reliable if the average recovered to original mass ratio was in the range 1$\pm$0.1 and the standard deviation was less than 10\%.}
     \label{fig:results_lmc_1E3}
 \end{figure*}
@@ -107,8 +107,7 @@
 \begin{figure*}
 
     \centering
-    \includegraphics[width=\textwidth]{images/results6_dist=50000_rho=10000}
-
+    \includegraphics[width=\textwidth]{images/tbl_stats_dist=50000_rho=10000.pdf}
     \caption{Same as Fig. \ref{fig:results_lmc_1E3} but for a stellar density of 10\h4~\spa. At these densities the number of ``double'' stars has increased to the point where our detection algorithm was unable to accurately fit and subtract many of the bright stars. Although a large number of incorrect mass determinations are visible in the big blue cloud, still around 60\% of the \s40\,000 sources in this image fall on the red one-to-one line. The segmented PSF meant that the the algorithm detected many fake sources which skewed the detection statistics in both the high and low mass regimes. We are still looking into ways of preventing this from happening in future studies.}
     
     \label{fig:results_lmc_1E4}
