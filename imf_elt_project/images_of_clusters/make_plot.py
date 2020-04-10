@@ -17,7 +17,7 @@ from astropy.coordinates import SkyCoord, match_coordinates_sky
 # from photutils import DAOStarFinder
 
 import simcado as sim
-from project.simcado_sandbox import imf
+from imf_elt_project.simcado_sandbox import imf
 
 
 ############################

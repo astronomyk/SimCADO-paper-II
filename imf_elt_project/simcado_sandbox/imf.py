@@ -629,7 +629,7 @@ def iter_psf_photometry(image, psf, radius, n_steps=5, **kwargs):
     
     for nsig in sigma_bins:
 
-        mean, median, std = sigma_clipped_stats(new_im, sigma=3.0, iters=5)
+        mean, median, std = sigma_clipped_stats(new_im, sigma=3.0)
         std = np.sqrt(np.median(new_im))
 
         daofind = DAOStarFinder(fwhm=2.0, threshold=nsig*std)

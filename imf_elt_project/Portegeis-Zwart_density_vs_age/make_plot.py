@@ -4,7 +4,7 @@ from matplotlib.colors import LogNorm
 from astropy.io import ascii
 from astropy import units as u
 
-from project.simcado_sandbox import imf
+from imf_elt_project.simcado_sandbox import imf
 
 
 def king_profile_core_fraction(r_core, r_eff):
