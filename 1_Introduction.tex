@@ -9,32 +9,53 @@
 
     \begin{tabular}{ l l r r r r r }
 
+        % \hline
+        % \hline
+        % Galaxy   &  Target      &  Distance &  Mass range       & IMF Slope(s) & Break Mass          & Reference         \\
+        %         &               & kpc       & \msun             &              & \msun               &                   \\
+        % \hline                  
+        % LMC      &  R136        & 50        & 2.8-15            & 2.22         &                     & Hunter 1995       \\
+        % LMC      &  NGC 1818    & 50        & 0.85-9            & 2.23         &                     & Hunter 1997       \\
+        % LMC      &  R136        & 50        & 1.35-6.5          & 2.28, 1.27   & 2.1                 & Sirianni 2000     \\
+        % LMC      &  LH 95       & 50        & 0.43-20           & 2.05, 1.05   & 1.1                 & Da Rio 2009       \\
+        % \hline                                                  
+        % SMC      &  NGC 330     & 62        & 1-7               & 2.3          &                     & Sirianni 2002     \\
+        % SMC      &  NGC 602     & 62        & 1-45              & 2.2          &                     & Schmalzl 2008     \\
+        % SMC      &              & 62        & 0.37–0.93         & 1.9          &                     & Kalirai 2013      \\
+        % \hline                                                  
+        % Hercules &              & 135       & 0.52-0.78         & 1.2          &                     & Geha 2013         \\
+        % Leo IV   &              & 156       & 0.54-0.77         & 1.3          &                     & Geha 2013         \\
+        % Leo I*   &              & 250       & 0.6-30            & 2.3          &                     & Gallart 1999      \\  
+        % \hline
+        % \end{tabular}
+
         \hline
         \hline
         Galaxy   &  Target      &  Distance &  Mass range       & IMF Slope(s) & Break Mass          & Reference         \\
                 &               & kpc       & \msun             &              & \msun               &                   \\
         \hline                  
-        LMC      &  R136        & 50        & 2.8-15            & 2.22         &                     & Hunter 1995       \\
-        LMC      &  NGC 1818    & 50        & 0.85-9            & 2.23         &                     & Hunter 1997       \\
-        LMC      &  R136        & 50        & 1.35-6.5          & 2.28, 1.27   & 2.1                 & Sirianni 2000     \\
-        LMC      &  LH 95       & 50        & 0.43-20           & 2.05, 1.05   & 1.1                 & Da Rio 2009       \\
+        LMC      &  R136        & 50        & 2.8-15            & 2.22         &                     & \cite{hunter1995} \\
+        LMC      &  NGC 1818    & 50        & 0.85-9            & 2.23         &                     & \cite{hunter1997}  \\
+        LMC      &  R136        & 50        & 1.35-6.5          & 2.28, 1.27   & 2.1                 & \cite{sirianni2000}     \\
+        LMC      &  LH 95       & 50        & 0.43-20           & 2.05, 1.05   & 1.1                 & \cite{dario2009}      \\
         \hline                                                  
-        SMC      &  NGC 330     & 62        & 1-7               & 2.3          &                     & Sirianni 2002     \\
-        SMC      &  NGC 602     & 62        & 1-45              & 2.2          &                     & Schmalzl 2008     \\
-        SMC      &              & 62        & 0.37–0.93         & 1.9          &                     & Kalirai 2013      \\
+        SMC      &  NGC 330     & 62        & 1-7               & 2.3          &                     & \cite{sirianni2002}    \\
+        SMC      &  NGC 602     & 62        & 1-45              & 2.2          &                     & \cite{schmalzl2008}     \\
+        SMC      &              & 62        & 0.37–0.93         & 1.9          &                     & \cite{kalirai2013}     \\
         \hline                                                  
-        Hercules &              & 135       & 0.52-0.78         & 1.2          &                     & Geha 2013         \\
-        Leo IV   &              & 156       & 0.54-0.77         & 1.3          &                     & Geha 2013         \\
-        Leo I*   &              & 250       & 0.6-30            & 2.3          &                     & Gallart 1999      \\  
+        Hercules &              & 135       & 0.52-0.78         & 1.2          &                     & \cite{geha2013}         \\
+        Leo IV   &              & 156       & 0.54-0.77         & 1.3          &                     & \cite{geha2013}         \\
+        Leo I*   &              & 250       & 0.6-30            & 2.3          &                     & \cite{gallart1999}     \\  
         \hline
         \end{tabular}
+
+
 
 \end{table*}
 
 
 The stellar Initial Mass Function (IMF), or the spectrum of stellar masses at birth, has implications in almost all fields of astrophysics. On the local scale, the IMF determines the number of available massive stars and with it the fate of a star formation region and creating the environments that emergent planet-forming circumstellar disks will be exposed too. 
 On the large scale, the IMF is irrevocably connected to the composition of the stellar populations in a galaxy and has a critical impact on the mass and energy cycle of a galaxy. The larger the amount of mass locked up in low mass stars, the smaller the reservoir of gas available for the next generation of stars and consequently the smaller the potential for the enrichment of the interstellar medium (ISM). Finally, cosmological simulations of galaxy formation and large scale structure inevitably rely on a universal IMF to determine stellar yields and the strength of feedback mechanisms governing the transport of energy and material. 
-\textcolor{red}{this footnote looks awkward there... need to find another place}\footnote{\url{https://simcado.readthedocs.io/}}
 %In short, the IMF is a fundamental parameter in astronomy. 
 
 % In his original work, \citet{salpeter1955} used a single power law distribution with a slope of 2.35 to describe the IMF for masses greater than \s1\,\msun. This was later modified to a series of broken power laws to include the stars below the hydrogen burning limit by \citet{kroupa2001}. In contrast, \citet{chabrier2003} proposed a log-normal distribution with a power law modification for the high and low mass regions. As the two descriptions are very similar in the most populated region between 0.1\msun and 10\msune, it has proved  difficult to decide which model more aptly describes the IMF.
@@ -59,11 +80,11 @@ The main focus of this paper is to determine to what extent MICADO will improve 
 2) What instrumental effects will play a critical role when undertaking such studies with MICADO and the ELT? and
 3) How many young clusters will be available for IMF studies with the ELT? 
 %How crowded can a region be for MICADO to still be able to detect 90\% of the stars above the detection limit? 
-In our quest for answers we used SimCADO, the instrument data simulator for MICADO \citep{leschinski2016}, to simulate a wide range of densely populated stellar fields at various distances. 
-The current version of SimCADO takes into account all the major and most of the minor spatial and spectral effects along the line of sight between the source and the detector. 
-We use the software to generate realistic images of model stellar fields and  conduct several iterations of PSF photometry and star subtraction to extract as many stars as possible from the simulated observations. 
-The extracted stars were compared with the input catalogue to determine the completeness of the extraction and to define a ``limiting reliably observable mass'' for the different stellar field densities and distances.
+In our quest for answers we used SimCADO, the instrument data simulator for MICADO \citep{leschinski2016, leschinski19}, to simulate a wide range of densely populated stellar fields at various distances. 
+The current version of SimCADO takes into account all the major and most of the minor spatial and spectral effects along the line of sight between the source and the detector. We use the software to generate realistic images of model stellar fields and  conduct several iterations of PSF photometry and star subtraction to extract as many stars as possible from the simulated observations. The extracted stars were compared with the input catalogue to determine the completeness of the extraction and to define a ``limiting reliably observable mass'' for the different stellar field densities and distances. 
 
-This paper is organised in the following way: Section \ref{sec:observations} describes the stellar fields used in our simulations, how the simulations were run, and also describe the algorithm for detecting and subtracting stars in the simulated images. 
-In Section \ref{sec:results} we describe the results of the simulations and discuss their validity in the context of possible future observations of real young stellar clusters. 
-Section \ref{sec:conclusion} summarises our results.
+This paper follows several recent works on resolved stellar populations with Extremely Large Telescopes 
+(e.g., \citealt{deep11, greggio12, gullieuszik15, tolstoy19_iau}). A brief overview of the major MICADO science cases is given in \cite{micado2016}. The latest science cases and simulations for IRIS on the TMT can be found in \cite{tmt_iris16}.
+
+This paper is organised in the following way: Section \ref{sec:observations} describes the stellar fields used in our simulations, how the simulations were run, and also describe the algorithm for detecting and subtracting stars in the simulated images. In Section \ref{sec:results} we describe the results of the simulations and discuss their validity in the context of possible future observations of real young stellar clusters. 
+Section \ref{sec:conclusion} summarizes our results.

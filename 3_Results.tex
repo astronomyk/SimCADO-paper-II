@@ -9,16 +9,10 @@ and distances.}
     \centering
     \includegraphics[width=\textwidth]{images/old_trusted_mass.pdf}
 
-    \caption{This graph is the answer to the first question we posed: what is the lowest observable mass for given stellar densities and distances? 
-    The errors in the observable mass are 0.2 dex and correspond to the size of the mass bins used. 
-    Two trends are visible in the best fit lines for each distance: the flat regime shows that the limiting mass is based on the sensitivity limit of MICADO, while the exponential regime shows where crowding becomes the limiting factor. 
-    The cavity to the lower right shows the parameter space in which stars of a given mass will not be observable.
-    Here the stellar density includes all the stars in a given area down to 0.01\,\msun, not just the stars above the sensitivity limit. 
-    Hence for the cases where observations are sensitivity limited, the effective observable star density is, in the cases with greater distance, much lower. 
-    In these cases the stars below the sensitivity limit only contribute to a higher background flux.}
-    
+    \caption{The lowest observable masses for given stellar densities and distances. The errors in the observable mass are 0.2 dex and correspond to the size of the mass bins used.   Two trends are visible in the best fit lines for each distance: a flat regime where the limiting mass is constrained by the sensitivity limit of MICADO, and an exponential regime where crowding becomes the limiting factor. The void to the lower right shows the parameter space in which stars of a given mass will not be observable for a given stellar density. 
+    %Here the stellar density includes all the stars in a given area down to 0.01\,\msune, not just the stars above the sensitivity limit.   Hence for the cases where observations are sensitivity limited, the effective observable star density is, in the cases with greater distance, much lower.   In these cases the stars below the sensitivity limit only contribute to a higher background flux. \textcolor{red}{too confusing... let's talk}
+    }
     \label{fig:trusted_mass}
-    
 \end{figure*}
 
 \begin{figure*}
@@ -30,22 +24,31 @@ and distances.}
     % Note that all clusters apart from M31 will be accessible to MICADO
 
     \caption{
-    The stellar densities in the cores of the young massive clusters listed in Table \ref{tbl:pz10_selection} assuming a sensitivity limit of K$_S$=28\m. 
-    While these clusters are spread over the whole sky, it is noteworthy that only the handful of YMCs in M31 are outside the observing range of the ELT. 
-    The size of the circles is proportional (including an offset) to the relative on-sky size of the cluster cores. 
-    The colours reflect the lowest possible reliably observable mass, as shown in Figure \ref{fig:trusted_mass} and listed in Table \ref{tbl:pz10_selection}. 
+    The stellar densities in the cores of the young massive clusters listed in Table \ref{tbl:pz10_selection} assuming a sensitivity limit of K$_S$=28\m. Only clusters from \citet{portegies2010} which have a defined core radius, r$_c$, are shown. While these clusters are spread over the whole sky, only the handful of YMCs in M31 are outside the observing window of the ELT. The size of the circles is proportional to the relative on-sky size of the cluster cores (including an offset) \textcolor{red}{offset?? }. 
+    The colours reflect the lowest possible reliably observable mass, as shown in Figure \ref{fig:trusted_mass} and listed in Table \ref{tbl:pz10_selection}. \textcolor{red}{but are different color?}
     Brown: M\textgreater0.01\msun; Pink: M\textgreater0.1\msun; Yellow: M\textgreater0.9\msun. 
-    The densities shown here take into account the sensitivity limit and therefore are only for the potentially observable stars, i.e. any low luminosity stars with K$_S$\textgreater28\m are omitted from the density calculation. 
-    This is equivalent to all stars in the Milky Way, M-class stars and brighter in the LMC, and G-class stars and brighter in M31. 
-    Only clusters from \citet{portegies2010} which have a defined core radius, r$_c$, are shown.
-    The dashed lines in this figure represent the (estimated) limit to the resolving capability of the HST, JWST and ELT. 
-    We define the limiting density as the mean distance between stars being equal to 2$\times$ the H-band PSF FWHM.
-    Given the predicted PSF shapes for the latter two telescopes, these lines may prove to be somewhat optimistic. 
-    Nevertheless the graphic illustrates the point that cores of the majority of young clusters outside the Milky Way are far too dense for either HST or JWST observations.
-    Thus it will require the ELT (or similar) to study the most heavily populated regions of these clusters.}
+    The densities shown here take into account the sensitivity limit and therefore are only for observable stars in each cluster, i.e, stars with K$_S$\textgreater28\m are omitted from the density calculation.  This means all stars in the Milky Way, M-type stars and brighter in the LMC, and G-type stars and brighter in M31, are included. 
+    The dashed lines in this figure represent the (estimated) limit to the resolving capability of the HST, JWST and ELT. \textcolor{red}{but we say below that R136 is ideal??}
+    We define the limiting density as the density when the mean distance between stars being equal to 2$\times$ the H-band PSF FWHM.
+    Given the predicted ELT PSF shapes, these lines may prove to be somewhat optimistic for HST and JWST.  Cluster cores of the majority of young clusters outside the Milky Way are far too dense for either HST or JWST observations.   \textcolor{red}{super dense and confusing. Captions don't discuss, they only present}}
     
     \label{fig:star_density_vs_age}
     
+\end{figure*}
+
+
+\begin{figure*}
+
+    \centering
+    \includegraphics[width=\textwidth]{images/young_clusters_within_2Mpc_incl_MW.pdf}
+
+    \caption{Cumulative number of young cluster targets that will be available to MICADO (\textdelta\,\textless\,+35\textdegree) out to 2 Mpc. The blue line show the cumulative number of young clusters with increasing distance from Earth as reported in catalogues and the literature (see references in Table \ref{tbl:cum_cluster_refs}.
+    The red dotted line shows the expected number of young clusters in a given galaxy based on an extrapolation of a galaxy's star formation rate from its total H$_\alpha$ flux \citep{caldwell09}.
+    The solid vertical lines represent the observational horizons for given stellar spectral types assuming a detection limit of K=28$^m$ with MICADO at the ELT. The faint dotted grey line shows the corresponding approximation distance limits for determining the slope of various regions of the IMF using MICADO.
+    The population of Milky Way clusters is taken from the HEASARC Milky Way Open Cluster database \citep{heasarc_mwsc} and represents only the clusters located at declinations accessible to MICADO (-85\textdegree\,\textless\,\textdelta\,\textless\,+35\textdegree)
+    }
+    \label{fig:local_group_cluster_number}
+
 \end{figure*}
 
 
@@ -118,22 +121,6 @@ Although MICADO may not have the sensitivity of a space-based telescope, the res
 
 
 \subsection{Opportunities and targets for future observations with MICADO and the ELT}
-
-
-\begin{figure*}
-
-    \centering
-    \includegraphics[width=\textwidth]{images/young_clusters_within_2Mpc_incl_MW.pdf}
-
-    \caption{Cumulative number of young cluster targets that will be available to MICADO (\textdelta\,\textless\,+35\textdegree) out to 2 Mpc. The blue line show the cumulative number of young clusters with increasing distance from Earth as reported in catalogues and the literature (see references in Table \ref{tbl:cum_cluster_refs}.
-    The red dotted line shows the expected number of young clusters in a given galaxy based on an extrapolation of a galaxy's star formation rate from its total H$_\alpha$ flux \citep{caldwell09}.
-    The solid vertical lines represent the observational horizons for given stellar spectral types assuming a detection limit of K=28$^m$ with MICADO at the ELT. The faint dotted grey line shows the corresponding approximation distance limits for determining the slope of various regions of the IMF using MICADO.
-    The population of Milky Way clusters is taken from the HEASARC Milky Way Open Cluster database \citep{heasarc_mwsc} and represents only the clusters located at declinations accessible to MICADO (-85\textdegree\,\textless\,\textdelta\,\textless\,+35\textdegree)
-    }
-    \label{fig:local_group_cluster_number}
-
-\end{figure*}
-
 
 These simulations are a nice theoretical exercise, however without an application to observations they are not all that useful.
 Figure~\ref{fig:star_density_vs_age} shows the estimated stellar densities in the cores of the open clusters and YMCs compiled by \citet{portegies2010}. 
