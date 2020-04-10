@@ -244,14 +244,14 @@ separations should be
          horizontalalignment="right", verticalalignment="bottom", alpha=0.7,
          zorder=206)
 
-galaxies = [8.5E3, 50E3, 220E3, 810E3, 2.15E6, 5E6, 20E6]
+galaxies = [8.5E3, 50E3, 220E3, 850E3, 2E6, 5E6, 20E6]
 names = ["Sgr A* - 8.5 kpc", "LMC - 50 kpc", "Leo I Dwarf - 220 kpc",
-         "M33 - 810 kpc",
-         "NGC 300 - 2.1Mpc", "Cen A - 5Mpc", "M87 (Virgo) 17Mpc)"]
+         "M33 - 850 kpc", "NGC 300 - 2Mpc", "M83 - 5Mpc",
+         "M87 (Virgo) 17Mpc)"]
 for gal, name in zip(galaxies[:-1], names[:-1]):
     plt.plot([gal], [1.2E-3], "ko", alpha=0.5)
     plt.text(1.2 * gal, 1.2E-3, name, rotation=90, horizontalalignment="center",
-             verticalalignment="bottom", alpha=0.7)
+             verticalalignment="bottom", alpha=0.7, zorder=1000)
 
 plt.loglog()
 plt.xlim(distances[0], distances[-1])
