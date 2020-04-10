@@ -7,7 +7,7 @@
     \centering
     \includegraphics[width=\textwidth]{images/5_clusters.pdf}
 
-    \caption{An illustration of the data set we used for this study. The young massive cluster depicted here contains a mass of 2$\times$10$^4$\,\msun and has a half-light radius of 1\,pc. It was observed with the MICADO instrument simulator at distances from 8\,kpc to 800\,kpc. The top row shows the cluster as seen by the centre detector of MICADO. The bottom row shows a 2``$\times$2`` window (512$\times$512 pixels) at the centre of this detector, corresponding to the area we used for our study. \rewrite ASK MAORY ABOUT NEW PSF - REDO WITH CLENET PSF
+    \caption{An illustration of the data set we used for this study. The model young massive cluster depicted here contains a mass of 2$\times$10$^4$\,\msun (approx. 5$\times$10$^4$ stars) and has a half-light radius of 1\,pc. The cluster contains stars in the mass range [0.01, 100]\msun which were sampled from a Kroupa IMF. It was observed with the MICADO instrument simulator (SimCADO) at distances from 8\,kpc to 800\,kpc. The top row shows the cluster as seen by the central detector of MICADO covering an on-sky area of 16\arcsec$\times$16\arcsec. The bottom row shows a 2\arcsec$\times$2\arcsec window (512$\times$512 pixels) at the centre of this detector, corresponding to the area we used for our study. Here the unique structure of the ELT's PSF is clearly visible. This helps to illustrate the difficulties that will be encountered when studying crowded fields with MICADO and the ELT.
     }
     
     \label{fig:5_clusters}
@@ -24,7 +24,6 @@
     The diagonal bands show the range of core stellar densities for the three major categories of young stellar populations: young massive clusters (orange), open clusters (green), and OB associations (blue). 
     The vertical lines represent the furthest distance at which a certain type of main sequence star will still be above the detection limit of MICADO, i.e. Ks=28\m.
     The dashed horizontal lines show the theoretical confusion limit for MICADO/ELT, JWST, HST and an instrument similar to NACO/VLT. The confusion limit assumes an average minimum distance of 2$\times$ the PSF FWHM between stars.
-    \rewrite REMOVE excess crossed
     }
     
     \label{fig:resolved_stellar_densities}
@@ -37,26 +36,32 @@ If a population is too young, it will not have finished forming all its stars an
 Dynamical effects will also have lead to evaporation of stars from the cluster, posing a problem to IMF completeness.
 Unfortunately such ideal conditions are rarely observed. 
 Star formation happens on time scales of 10\h6 years. 
-The most massive stars burn their hydrogen reserves within the first several ten million years and move off the main sequence\needcite. 
-Given that the dispersion time for stellar clusters is on the order of hundreds of millions of years, at any point in time relatively few of the observable new clusters will be found in the ideal age range (between 5 and 20\,Myr) for studying the IMF\needcite. 
-The majority of IMF studies focus on the clusters which come closest to meeting these conditions - namely the cores of open clusters (OC) and young massive clusters (YMC)\needcite. 
-It should be mentioned that OB associations also provide a laboratory for studying the IMF. 
-However as these are older and in many cases more spread out, the chances of contamination from background sources and missing ejected stars is higher\needcite. 
+The most massive stars burn their hydrogen reserves within the first several ten million years and move off the main sequence. 
+Given that the dispersion time for stellar clusters is on the order of hundreds of millions of years \citep{Lada2003-ip}, at any point in time relatively few of the observable new clusters will be found in the ideal age range (between 5 and 20\,Myr) for studying the IMF. 
+The majority of IMF studies focus on the clusters which come closest to meeting these conditions - namely the cores of open clusters (OC) and young massive clusters (YMC). 
+OB associations also provide a laboratory for studying the IMF with the obvious advantage that stellar density does not pose a problem. However, as OB associations are spread out over a few hundred parsecs, the chances of contamination from background sources is higher. 
 % Furthermore, the high mass end of the IMF cannot be reliably observed as the highest mass stars have already left the main sequence, and some have ended as supernova\correct.
 
 
 \subsection{Parameter Space}
 
-HST has a diffraction limit of \s0.1'' at 1.2\,\um and can reach magnitudes as faint as J=28.6\m \citep{hst_wfc3} in a 10 hour observation. Using AO assisted ground based instruments similar to NACO at the VLT, diffraction limited observations can be achieved over small (\s1') fields of view. 
-The diffraction limit of the VLT telescopes (\s0.03'' at 1.2\,\um) is 3$\times$ smaller than HST, however due to the atmospheric background the sensitivity limits of VLT instruments are many magnitudes brighter than for HST. 
+
+
+
+HST has a diffraction limit of \s0.1\arcsec at 1.2\,\um and can reach magnitudes as faint as J=28.6\m \citep{hst_wfc3} in a 10 hour observation. Using AO assisted ground based instruments on 8\,m-class telescopes (similar to NACO at the VLT), diffraction limited observations can be achieved over small (\s1\arcmin) fields of view. 
+The diffraction limit of the VLT telescope (\s0.03\arcsec at 1.2\,\um) is \s3$\times$ smaller than HST, however due to the atmospheric background the sensitivity limits of VLT instruments are many magnitudes brighter than for HST. 
 As boundary conditions for our suite of stellar fields we took the resolution limit of HST, as cluster cores with densities lower than this are already accessible to the HST. 
 Assuming an average of one star per FWHM of the PSF, our lower density limit was set to 100\,\spa. 
 For the upper density limit we first took the theoretical diffraction limit of the ELT: 7\,mas at 1.2\,\ume, or 2$\times$10\h4\,\spae. However as faint stars drop below the telescope's detection limit the effective density of detectable stars decreases with increasing distance. 
-As we wanted crowding limited observations at large distances (\textgreater1\,Mpc), we increased the true stellar density by a factor of 15$\times$ so that the M\,\textgreater\,1\,\msun stars alone would meet the crowding criterion of 1 star per FWHM. 
+As we wanted crowding limited observations at large distances (\textgreater1\,Mpc), we increased the true stellar density by a factor of 15$\times$ so that stars with masses M\,\textgreater\,1\,\msun alone would meet the crowding criterion of 1 star per FWHM. 
 Thus we set the upper limit for the true cluster stellar density to 3$\times$10\h5\,\spa.
 
-Current telescopes are capable of detecting almost all main sequence stars above the hydrogen burning limit (\s0.08\,\msune) within a few kiloparsecs of the Sun\needcite. 
+Current telescopes are capable of detecting almost all main sequence stars above the hydrogen burning limit (\s0.08\,\msune) within a few kiloparsecs of the Sun (e.g. \citealt{muzic17}). 
 Detecting all main sequence stars in clusters further afield, e.g. in the galactic centre and beyond, is where MICADO's increased sensitivity and resolution will bring the greatest breakthroughs. 
+
+\rewrite reference to IMF educational figure
+
+
 Indeed the question of whether the IMF is truly universal dictates that we study the IMF outside the Milky Way. 
 Therefore we placed our model proxy-clusters at distances corresponding to some of the more well known celestial landmarks: The Galactic Centre (\s8\,kpc), the LMC (\s50\,kpc), Leo I dwarf galaxy (\s200\,kpc), M33 (\s800\,kpc)\footnote{The author recognises that the location of the ELT in the southern hemisphere is unfavourable for effectively observing M33. We provide this data point because M33 will, with luck, be visible to the Thirty Meter Telescope.}, NGC 300 (\s2\,Mpc), and Cen A (\s5\,Mpc). 
 Figure \ref{fig:resolved_stellar_densities} shows the parameter space covered by open clusters of average mass (\s1000\,\msun) with radii between 0.1\,pc and 3\,pc and OB Associations of average mass (\s5000\,\msun) with radii between 10\,pc and 100\,pc as distance from Earth increases. 
@@ -65,17 +70,21 @@ The lower bounds of the open cluster parameter space also covers the cores of YM
 
 
 \subsection{Artificial stellar fields}
-
-In this study we generated densely populated stellar fields, that could function as proxies for the dense regions at the cores of young stellar clusters. 
+Figure \ref{fig:5_clusters} shows a model cluster placed at ever increasing distances from Earth. 
+It is obvious from Figure \ref{fig:5_clusters} that placing a single cluster at different distances would result in inhomogeneous datasets after running our source finding algorithm. 
+In order to create a homogenous dataset which would allow for a direct comparison of the effects of distance and the ELTs optics on crowded fields, we generated 56 densely populated stellar fields, that could function as proxies for the dense regions at the cores of young stellar clusters. 
+Each stellar field was generated for a unique combination of stellar density and distance.
 The parameter space covered by these cluster proxies are shown with the crosses in Figure \ref{fig:resolved_stellar_densities}. 
-The size of each stellar field was set at 2''$\times$2'' (see section \ref{sec:telescope}). 
+The size of each stellar field was set at 2\arcsec$\times$2\arcsec (see section \ref{sec:telescope}). 
 The stellar fields were populated by continually drawing stars from an IMF until the required stellar density was reached. 
 The mass of each star was drawn at random from an IMF distribution with minimum and maximum masses of 0.01\,\msun and 300\,\msun. 
-The IMF followed a standard \citet{kroupa2001} broken power law distribution with breaks at 0.08\,\msun and 0.5\,\msun and standard slope exponents\footnote{By ``standard'' we mean: $\alpha=0.3$ for $\mathrm{M} < 0.08 \mathrm{M}_\odot$, $\alpha=1.3$ for $0.08\mathrm{M}_\odot < \mathrm{M} < 0.5 \mathrm{M}_\odot$, and $\alpha=2.3$ for $\mathrm{M} > 0.5 \mathrm{M}_\odot$ as defined in Kroupa (2001)}. 
-The absolute J and Ks magnitudes for each star were calculated by interpolating Table 5 in \citet{pecaut2013}\footnote{Masses are not given in Table 5, but rather in the online suppliment at \url{http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt}} for the given mass. 
+The IMF followed a standard \citet{kroupa2001} broken power law distribution %with breaks at 0.08\,\msun and 0.5\,\msun and standard slope exponents
+\footnote{By ``standard'' we mean: $\alpha=0.3$ for $\mathrm{M} < 0.08 \mathrm{M}_\odot$, $\alpha=1.3$ for $0.08\mathrm{M}_\odot < \mathrm{M} < 0.5 \mathrm{M}_\odot$, and $\alpha=2.3$ for $\mathrm{M} > 0.5 \mathrm{M}_\odot$ as defined in Kroupa (2001)}. 
+Table~5 from \citet{pecaut2013}\footnote{Masses are not given in Table 5, but rather in the online suppliment at \url{http://www.pas.rochester.edu/~emamajek/EEM_dwarf_UBVIJHK_colors_Teff.txt}}
+was used to obtain the absolute J and Ks magnitudes for each star for the given mass. 
 The requisite distance modulus for the stellar fields was added to give each star an apparent magnitude. 
 It should be noted that we did not include extinction in the distance modulus as this varies with the line of sight. 
-The stars were assigned random coordinates within the 2''$\times$2'' bounding box. 
+The stars were assigned random coordinates within the 2\arcsec$\times$2\arcsec bounding box. 
 Although true clusters follow a radial luminosity profile, and hence density profile, for this study we were primarily interested in the densest regions, i.e. the worst case scenario. 
 Hence distribution of stars in our stellar fields followed a uniform random distribution. 
 In real observations the decline in density with radial distance will most likely result in a better characterisation of the IMF over our pessimistic approach.
@@ -85,10 +94,10 @@ In real observations the decline in density with radial distance will most likel
 \subsection{Observations}
 \label{sec:telescope}
 
-To ``observe'' our stellar fields we used the standard imaging mode of SimCADO \citep{leschinski2016} which mimics observations with the wide-field mode of MICADO at the ELT. 
+To ``observe'' our stellar fields we used the standard imaging mode of SimCADO\footnote{For documentation, see: \url{https://simcado.readthedocs.io/}. Github code base: \url{https://github.com/astronomyk/SimCADO}} \citep{leschinski2016}, an open-source instrument simulator which mimics observations with the wide-field mode of MICADO at the ELT. 
 The core regions of open clusters and YMC have radii on the order of \s1\,pc \citep{portegies2010}. 
-At a distance of 200\,kpc ($\sim$Leo 1 Dwarf), this translates to an angular diameter of \s2''. Thus we thought it safe to assume that the stellar density within the inner 2''$\times$2'' region should remain relatively constant.
-For the sake of computational effort we decided to restrict to observations to this 2''$\times$2'' window in the centre of the detector.
+At a distance of 200\,kpc ($\sim$Leo 1 Dwarf), this translates to an angular diameter of \s2\arcsec. Thus we thought it safe to assume that the stellar density within the inner 2\arcsec$\times$2\arcsec region should remain relatively constant.
+For the sake of computational effort we decided to restrict to observations to this 2\arcsec$\times$2\arcsec window in the centre of the detector.
 
 At the very least dual-band photometry is required to determine the mass of a star. Therefore detections in at least the J and K$_S$ filters are necessary. 
 We deemed a detection in the K$_S$ filter to be critical for any study of the IMF and therefore restricted our observations to this filter. 
@@ -105,7 +114,9 @@ Exposure times were kept to 1 hour for no other reason than observing time at th
 \subsection{Source extraction and matching}
 Figures \ref{fig:results_lmc_1E3} and \ref{fig:results_lmc_1E4} in the Appendix show a graphical representation of the process described in this section. 
 They show two examples of ``observed'' stellar fields placed at a distance of 50\,kpc and containing 10$^3$ and 10$^4$ \spa respectively. 
-The stark features of the SCAO PSF\footnote{The PSF user here was from a simulation of the SCAO mode from MAORY. It was only released internally within the MAORY consortium. By default the SimCADO package comes with a SCAO PSF generated by the MICADO consortium, which is in the public domain.} are clearly visible in the images. 
+The stark features of the SCAO PSF
+%\footnote{The PSF user here was from a simulation of the SCAO mode from MAORY. It was only released internally within the MAORY consortium. By default the SimCADO package comes with a SCAO PSF generated by the MICADO consortium, which is in the public domain. \rewrite}
+are clearly visible in the images. 
 The diffraction core of the PSF is however still well modelled by a Gaussian distribution.
 To find and measure the stars in the images we used the following method:
 
