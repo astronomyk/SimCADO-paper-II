@@ -99,8 +99,8 @@ plt.gca().set_yscale("log", nonposy='clip')
 
 # plt.legend(loc=2, numpoints=1)
 
-plt.xlabel("Star Density [stars/arcsec$^2$]")
-plt.ylabel("Limiting observable mass [M$_\odot$]")
+plt.xlabel("Stellar Density [stars/arcsec$^2$]")
+plt.ylabel("Minimum observable mass [M$_\odot$]")
 
 abs_mags = [-6.4, -4.5, -3., -0.7, 1.1, 1.76, 3., 3.8, 5.4, 10.4, 12.7]
 names = ["B0I", "O5V", "B0V", "B3V", "A0V", "F0V", "G0V", "K0V", "M0V", "M9V",
