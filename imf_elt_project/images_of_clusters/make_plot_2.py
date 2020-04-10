@@ -69,9 +69,8 @@ def plot_cluster_hdus():
         vmin = np.min(im)
         vmax = 50 * np.median(im)
 
+        # upper plot
         cax = plt.axes([0 + 0.2*ii, 0.5, 0.2, 0.5])
-        # plt.subplot(2, 5, 1 + ii)
-        cax = plt.gca()
         cax.imshow(im, norm=LogNorm(), vmin=vmin, vmax=vmax,
                    cmap=cmap, origin="lower")
 
@@ -79,6 +78,7 @@ def plot_cluster_hdus():
                  horizontalalignment="left", fontsize=14)
         cax.axis("off")
 
+        # make white zoom boxes
         cax.plot([1, 1798, 1798, 2298, 2298, 1798, 2298, 4095],
                  [1, 2298, 1798, 1798, 2298, 2298, 2298, 1], c="w", lw=1)
 
@@ -87,8 +87,7 @@ def plot_cluster_hdus():
             cax.text(3760, 2048, '10"', fontsize=14, color="w",
                      horizontalalignment="right", verticalalignment="center")
 
-        # plt.subplot(2, 5, 6 + ii)
-        # cax = plt.gca()
+        # lower plot
         cax = plt.axes([0 + 0.2*ii, 0.0, 0.2, 0.5])
 
         m, d = 2048, 250
@@ -101,7 +100,17 @@ def plot_cluster_hdus():
             cax.text(470, 250, '1"', fontsize=14, color="w",
                      horizontalalignment="right", verticalalignment="center")
 
-    # plt.subplots_adjust(wspace=0., hspace=0.)
+        # make grey crosshair
+        if ii in [2, 3]:
+            xs, ys = [260, 255], [200, 225]
+            plt.plot([xs[ii-2], xs[ii-2]],
+                     [ys[ii-2], ys[ii-2] - 20],
+                     c="grey", lw=3)
+            xs, ys = [305, 280], [250, 250]
+            plt.plot([xs[ii-2], xs[ii-2]+20],
+                     [ys[ii-2], ys[ii-2]],
+                     c="grey", lw=3)
+
 
 plt.figure(figsize=(15, 6.03))
 
@@ -111,4 +120,4 @@ plot_cluster_hdus()
 plt.savefig("5_clusters.png", format="png")
 plt.savefig("5_clusters.pdf", format="pdf")
 
-plt.show()
+#plt.show()
