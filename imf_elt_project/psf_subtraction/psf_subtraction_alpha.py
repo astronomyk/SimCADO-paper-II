@@ -145,8 +145,9 @@ for dist_mod in dist_mods[:1]:  # GC=14.5, LMC=18.5, Leo I=21.5, M31=24.5
 
             tbl_stats = hstack([tbl_stats, tbl_hist])
 
-            fname = dname + "tbl_stats_dist=" + str(dist) + "_rho=" + str(
-                star_density) + ".dat"
+            fname = dname + "tbl_stats_dist={}_rho={}.dat" \
+                            "".format(int(round(dist)),
+                                      int(round(star_density)))
             # tbl_stats.write(fname, format="ascii")
             # results.write(fname.replace("stats", "found"), format="ascii")
 
