@@ -2,11 +2,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 % Core size and density from Portegeis-Zwart 2010
-\section{Supplemental material}
+\section{Supplementary material}
 
 \begin{table*}
     \centering
-    \caption{The age and observable stellar densities for a selection of young massive clusters found both in and outside the Milky Way, as listed in \citet{portegies2010}. Only clusters from \citet{portegies2010} which have a defined core radius, r$_c$, are shown. The densities have been calculated to only include stars which are brighter than Ks=28\m, as fainter stars will not be detectable by MICADO. The table list the parameters for the clusters shown in Fig. \ref{fig:star_density_vs_age}.}
+    \caption{Properties of a selection of nearby young massive clusters from \citet{portegies2010}}
     \label{tbl:pz10_selection}
     \begin{tabular}{l l r r r r r r}
         \hline\hline
@@ -53,6 +53,7 @@
         M31    & B015D        & 780      & 70.8 & 4.8       & 0.06    & 4.6            & 0.9           \\
         \hline
     \end{tabular}
+    \tablefoot{The age and observable stellar densities for a selection of young massive clusters found both in and outside the Milky Way, as listed in \citet{portegies2010}. Only clusters from \citet{portegies2010} with a defined core radius, r$_c$, are shown. The densities have been calculated to only include stars brighter than Ks=28$^m$, as fainter stars will not be detectable by MICADO. The table lists the parameters for the clusters shown in Fig. \ref{fig:star_density_vs_age}.}
 \end{table*}
 
 
@@ -61,32 +62,38 @@
 
 \begin{table*}
     \centering
-    \caption{References for the cumulative cluster numbers within a 2 Mpc radius
-    which will be observable by MICADO at the ELT. Star formation rate estimates 
-    are based on the integrated galaxy $H_{\alpha}$ fluxes from \citet{karachentsev2013}
-    and were used to estimate the true number of open clusters contained in each
-    galaxy. The Milky Way clusters were taken from the HEASARC Milky Way Star Cluster
-    catalogue \citep{heasarc_mwsc} and filtered to only include clusters visible to 
-    MICADO at the ELT (i.e. Dec $<$ +35 deg).
-    }
+    \caption{Number of star forming clusters in nearby galaxies}
     \label{tbl:cum_cluster_refs}
-    \begin{tabular}{lrrrl}
+    \begin{tabular}{lrrrc}
     
     \hline
     \hline
     Name     & SFR                  & Distance  & N Clusters & Reference      \\
              & [M$_\odot$ / yr]     & [kpc]     &            &                \\
     \hline
-    MilkyWay &                      & 8         & 590        & Kharchenko+13  \\
-    LMC      & 0.30                 & 50        & 456        & Glatt+10       \\
-    SMC      & 0.05                 & 63        & 71         & Glatt+10       \\
-    NGC6822  & 0.01                 & 499       & 24         & Karampelas+09  \\
-    M33      & 0.36                 & 847       & 208        & Fan+14         \\
-    NGC0055  & 0.45                 & 2128      & 168        & Castro+08      \\
-    NGC0300  & 0.18                 & 2148      & 117        & Pietrzynski+01 \\
-    NGC4214  & 0.15                 & 2938      & 52         & Andrews+13     \\
+    MilkyWay &                      & 8         & 590        & 1            \\
+    LMC      & 0.30                 & 50        & 456        & 2            \\
+    SMC      & 0.05                 & 63        & 71         & 2            \\
+    NGC6822  & 0.01                 & 499       & 24         & 3            \\
+    M33      & 0.36                 & 847       & 208        & 4            \\
+    NGC0055  & 0.45                 & 2128      & 168        & 5            \\
+    NGC0300  & 0.18                 & 2148      & 117        & 6             \\
+    NGC4214  & 0.15                 & 2938      & 52         & 7             \\
     \hline
     \end{tabular}
+    \tablefoot{References for the cumulative cluster numbers within a 2 Mpc radius
+    which will be observable by MICADO at the ELT. Star formation rate estimates 
+    are based on the integrated galaxy H$_{\alpha}$ fluxes from \citet{karachentsev2013}
+    and were used to estimate the true number of open clusters contained in each
+    galaxy (see article text). 
+    The Milky Way clusters were taken from the HEASARC Milky Way Star Cluster
+    catalogue \citep{heasarc_mwsc} and filtered to only include clusters visible to 
+    MICADO at the ELT (i.e. -85 \textless Dec \textless +35 deg).}
+    \tablebib{(1)~\citet{heasarc_mwsc}; (2) \citet{glatt2010}; (3) \citet{karampelas2009}; 
+              (4) \citet{fan2014}; (5) \citet{castro2008}; (6) \citet{pietrzynski2001};
+              (7) \citet{andrews2013}.}
+    
+    
 \end{table*}
 
 
@@ -99,7 +106,7 @@
 \begin{figure*}
     \centering
     \includegraphics[width=\textwidth]{images/tbl_stats_dist=50000_rho=1000.pdf}
-    \caption{Results of extracting stars from a 1000\,\spa cluster at a distance of 50\,kpc. Top left: The original 2''$\times$2'' stellar field with a density of 10\h3~\spa. The stars in the field have masses between 0.01\,\msun and 300\,\msune. The PSF used in this study was an instantaneous SCAO PSF, similar to what would be seen on a single MICADO detector 2.6\,s exposure. Top right: The same field after our detection and subtraction algorithm has iteratively removed all the stars. 10\h3~\spa are extracted reasonably easily by our algorithm. Bottom left: The fraction of extracted stars in each mass bin which matched up with the original list of stars. The majority of stars more massive than 0.1\,\msun were detected. Bottom right: The upper panel shows the ratio of extracted mass to original mass. The vast majority (\s97\%) of the almost 4000 stars in the image fell almost perfectly on the red one-to-one line. The minor scatter around the line is due to a combination of our detection algorithm not being able to discern between to very close stars, and contamination for the PSF artefacts, e.g. the segmented diffraction spikes. The lower panel shows the standard deviation of masses around the one-to-one line in a certain mass bin. A mass bin was deemed reliable if the average recovered to original mass ratio was in the range 1$\pm$0.1 and the standard deviation was less than 10\%.}
+    \caption{Results of extracting stars from a 1000\,\spa cluster at a distance of 50\,kpc. Top left: The original 2''$\times$2'' stellar field with a density of 10\h3~\spa. The stars in the field have masses between 0.01\,\msun and 300\,\msune. The PSF used in this study was an instantaneous SCAO PSF, similar to what would be seen on a single MICADO detector 2.6\,s exposure. Top right: The same field after our detection and subtraction algorithm had iteratively removed all the stars. 10\h3~\spa are extracted reasonably easily by our algorithm. Bottom left: The fraction of extracted stars in each mass bin which matched up with the original list of stars. The majority of stars more massive than 0.1\,\msun were detected. Bottom right: The upper panel shows the ratio of extracted mass to original mass. The vast majority (\s97\%) of the almost 4000 stars in the image fell almost perfectly on the red one-to-one line. The minor scatter around the line is due to a combination of our detection algorithm not being able to discern between two very close stars, and contamination from the PSF artefacts, e.g. the segmented diffraction spikes. The lower panel shows the standard deviation of masses around the one-to-one line in a certain mass bin. A mass bin was deemed reliable if the average recovered to original mass ratio was in the range 1$\pm$0.1 and the standard deviation was less than 10\%.}
     \label{fig:results_lmc_1E3}
 \end{figure*}
 
@@ -108,7 +115,7 @@
 
     \centering
     \includegraphics[width=\textwidth]{images/tbl_stats_dist=50000_rho=10000.pdf}
-    \caption{Same as Fig. \ref{fig:results_lmc_1E3} but for a stellar density of 10\h4~\spa. At these densities the number of ``double'' stars has increased to the point where our detection algorithm was unable to accurately fit and subtract many of the bright stars. Although a large number of incorrect mass determinations are visible in the big blue cloud, still around 60\% of the \s40\,000 sources in this image fall on the red one-to-one line. The segmented PSF meant that the the algorithm detected many fake sources which skewed the detection statistics in both the high and low mass regimes. We are still looking into ways of preventing this from happening in future studies.}
+    \caption{Same as Fig. \ref{fig:results_lmc_1E3} but for a stellar density of 10\h4~\spae. At these densities the number of ``double'' stars has increased to the point where our detection algorithm was unable to accurately fit and subtract many of the bright stars. Although a large number of incorrect mass determinations are visible in the big blue cloud, still around 60\% of the \s40\,000 sources in this image fall on the red one-to-one line. The segmented PSF meant that the algorithm detected many fake sources, which skewed the detection statistics in both the high and low mass regimes. We are still looking into ways of preventing this from happening in future studies.}
     
     \label{fig:results_lmc_1E4}
     

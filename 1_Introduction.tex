@@ -4,10 +4,10 @@
 \begin{table*}
 
     \centering
-    \caption{A compilation of mass limits for a selection of studies of the IMF outside the Milky Way with the Hubble space telescope. It should be noted that for the study by \citet{gallart1999} the estimated global star formation history was consistent with a Salpeter slope, rather than a Salpeter slope being extracted from the photometric data.}
+    \caption{Mass limits for a selection of studies of the IMF outside the Milky Way with the Hubble space telescope. }
     \label{tbl:imf_lit_review}
 
-    \begin{tabular}{ l l r r r r r }
+    \begin{tabular}{ l l r r r r c }
 
         % \hline
         % \hline
@@ -34,22 +34,26 @@
         Galaxy   &  Target      &  Distance &  Mass range       & IMF Slope(s) & Break Mass          & Reference         \\
                 &               & kpc       & \msun             &              & \msun               &                   \\
         \hline                  
-        LMC      &  R136        & 50        & 2.8-15            & 2.22         &                     & \cite{hunter1995} \\
-        LMC      &  NGC 1818    & 50        & 0.85-9            & 2.23         &                     & \cite{hunter1997}  \\
-        LMC      &  R136        & 50        & 1.35-6.5          & 2.28, 1.27   & 2.1                 & \cite{sirianni2000}     \\
-        LMC      &  LH 95       & 50        & 0.43-20           & 2.05, 1.05   & 1.1                 & \cite{dario2009}      \\
+        LMC      &  R136        & 50        & 2.8-15            & 2.22         &                     & 1 \\
+        LMC      &  NGC 1818    & 50        & 0.85-9            & 2.23         &                     & 2  \\
+        LMC      &  R136        & 50        & 1.35-6.5          & 2.28, 1.27   & 2.1                 & 3     \\
+        LMC      &  LH 95       & 50        & 0.43-20           & 2.05, 1.05   & 1.1                 & 4      \\
         \hline                                                  
-        SMC      &  NGC 330     & 62        & 1-7               & 2.3          &                     & \cite{sirianni2002}    \\
-        SMC      &  NGC 602     & 62        & 1-45              & 2.2          &                     & \cite{schmalzl2008}     \\
-        SMC      &              & 62        & 0.37–0.93         & 1.9          &                     & \cite{kalirai2013}     \\
+        SMC      &  NGC 330     & 62        & 1-7               & 2.3          &                     & 5    \\
+        SMC      &  NGC 602     & 62        & 1-45              & 2.2          &                     & 6     \\
+        SMC      &              & 62        & 0.37–0.93         & 1.9          &                     & 7     \\
         \hline                                                  
-        Hercules &              & 135       & 0.52-0.78         & 1.2          &                     & \cite{geha2013}         \\
-        Leo IV   &              & 156       & 0.54-0.77         & 1.3          &                     & \cite{geha2013}         \\
-        Leo I*   &              & 250       & 0.6-30            & 2.3          &                     & \cite{gallart1999}     \\  
+        Hercules &              & 135       & 0.52-0.78         & 1.2          &                     & 8         \\
+        Leo IV   &              & 156       & 0.54-0.77         & 1.3          &                     & 8         \\
+        Leo I*   &              & 250       & 0.6-30            & 2.3          &                     & 9     \\  
         \hline
         \end{tabular}
-
-
+        
+        \tablefoot{It should be noted that for the study by \citet{gallart1999} the estimated global     star formation history was consistent with a Salpeter slope, rather than a Salpeter         slope being extracted from the photometric data.}
+        \tablebib{(1)~\citet{hunter1995}; (2) \citet{hunter1997}; (3) \citet{sirianni2000}; (4) \citet{dario2009};
+                  (5) \citet{sirianni2002}; (6) \citet{schmalzl2008}; (7) \citet{kalirai2013}; (8) \citet{geha2013}
+                  (9) \citet{gallart1999}.
+                }
 
 \end{table*}
 
@@ -60,7 +64,9 @@ On the large scale, the IMF is irrevocably connected to the composition of the s
 
 % In his original work, \citet{salpeter1955} used a single power law distribution with a slope of 2.35 to describe the IMF for masses greater than \s1\,\msun. This was later modified to a series of broken power laws to include the stars below the hydrogen burning limit by \citet{kroupa2001}. In contrast, \citet{chabrier2003} proposed a log-normal distribution with a power law modification for the high and low mass regions. As the two descriptions are very similar in the most populated region between 0.1\msun and 10\msune, it has proved  difficult to decide which model more aptly describes the IMF.
 
-In his original work, \citet{salpeter1955} used a single power-law distribution with a slope of 2.35 to describe the IMF for masses between \s1\ and \s10\,\msun . This description was later modified to a series of broken power laws to include the stars below the hydrogen-burning limit by \citet{kroupa2001}. \citet{chabrier2005} proposed a log-normal distribution with a power-law modification for the high mass regions. As both descriptions are empirical and not the prediction from theory, it has proved difficult from observations to decide which of these two descriptions more aptly describes the IMF.
+In his original work, \citet{salpeter1955} used a single power-law distribution with a slope of 2.35 to describe the IMF for masses between \s1\ and \s10\,\msun . This description was later modified to a series of broken power laws to include the stars below the hydrogen-burning limit by \citet{kroupa2001}. \citet{chabrier2003, Chabrier2005} proposed a log-normal distribution with a power-law modification for the high mass regions. 
+% As both descriptions are empirical and not the prediction from theory, it has proved dicult from observations to decide which of these two descriptions more aptly describes the IMF.
+\textbf{Given the observational uncertainties involved in determining the exact shape of a cluster's IMF, it has hitherto proved difficult to show which of these two descriptions more aptly describes the IMF.}
 
 Most observational studies suggest that the shape of the IMF is constant \citep{Lada2003-ip,Kroupa2002,Bastian2010}. Definitive deviations from the accepted IMF form are elusive, and when found, often controversial \citep{Van_Dokkum2010-gx,Conroy2012-hv,Drass2016-kp}. One major challenge hinders a concluding result on the universality of the IMF:  directly derived IMFs from star-counts for environments substantially different from the solar neighbourhood. 
 Table \ref{tbl:imf_lit_review} shows that even in the closest star forming galaxies like the Magellanic clouds, only the Hubble space telescope (HST) has the sensitivity to reach below one solar mass (see references in Table \ref{tbl:imf_lit_review}). 
