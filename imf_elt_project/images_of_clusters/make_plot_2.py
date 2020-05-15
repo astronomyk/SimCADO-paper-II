@@ -54,9 +54,10 @@ def make_cluster_hdus(mass=2E4, half_light_radius=1, exptime=3600, show=False):
     if show: plt.show()
 
 
-def plot_cluster_hdus():
+def plot_cluster_hdus(fig_scale):
     from glob import glob
     from astropy.io import fits
+
 
     dists = [8.5, 20, 50, 200, 800]
 
@@ -75,16 +76,16 @@ def plot_cluster_hdus():
                    cmap=cmap, origin="lower")
 
         cax.text(200, 3700, f"{dists[ii]} kpc", color="w",
-                 horizontalalignment="left", fontsize=14)
+                 horizontalalignment="left", fontsize=14*fig_scale)
         cax.axis("off")
 
         # make white zoom boxes
         cax.plot([1, 1798, 1798, 2298, 2298, 1798, 2298, 4095],
-                 [1, 2298, 1798, 1798, 2298, 2298, 2298, 1], c="w", lw=1)
+                 [1, 2298, 1798, 1798, 2298, 2298, 2298, 1], c="w", lw=1*fig_scale)
 
         if ii == 4:
-            cax.plot([3840, 3840], [2048-1250, 2048+1250], c="w", lw=3)
-            cax.text(3760, 2048, '10"', fontsize=14, color="w",
+            cax.plot([3840, 3840], [2048-1250, 2048+1250], c="w", lw=3*fig_scale)
+            cax.text(3760, 2048, '10"', fontsize=14*fig_scale, color="w",
                      horizontalalignment="right", verticalalignment="center")
 
         # lower plot
@@ -96,8 +97,8 @@ def plot_cluster_hdus():
 
         cax.axis("off")
         if ii == 4:
-            cax.plot([480, 480], [125, 375], c="w", lw=3)
-            cax.text(470, 250, '1"', fontsize=14, color="w",
+            cax.plot([480, 480], [125, 375], c="w", lw=3*fig_scale)
+            cax.text(470, 250, '1"', fontsize=14*fig_scale, color="w",
                      horizontalalignment="right", verticalalignment="center")
 
         # make grey crosshair
@@ -105,19 +106,20 @@ def plot_cluster_hdus():
             xs, ys = [260, 255], [200, 225]
             plt.plot([xs[ii-2], xs[ii-2]],
                      [ys[ii-2], ys[ii-2] - 20],
-                     c="grey", lw=3)
+                     c="grey", lw=3*fig_scale)
             xs, ys = [305, 280], [250, 250]
             plt.plot([xs[ii-2], xs[ii-2]+20],
                      [ys[ii-2], ys[ii-2]],
-                     c="grey", lw=3)
+                     c="grey", lw=3*fig_scale)
 
 
-plt.figure(figsize=(15, 6.03))
+fig_scale = 4
+plt.figure(figsize=(15*fig_scale, 6.03*fig_scale))
 
 # make_cluster_hdus(exptime=60) - images are good now
-plot_cluster_hdus()
+plot_cluster_hdus(fig_scale)
 
-plt.savefig("5_clusters.png", format="png")
-plt.savefig("5_clusters.pdf", format="pdf")
+plt.savefig("5_clusters_hr.png", format="png")
+plt.savefig("5_clusters_hr.pdf", format="pdf")
 
 #plt.show()

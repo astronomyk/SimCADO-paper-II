@@ -1,0 +1,1 @@
+Resolving stellar clusters with MICADO at the ELT
