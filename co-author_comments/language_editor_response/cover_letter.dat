@@ -1,13 +1,20 @@
+Firstly, many thanks for all the effort you went to in correcting my text. I thought I'd done a reasonable job in proof reading myself, but I guess I was wrong. So thanks again.
+
+Now onto my responses to your notes:
+
 - Language - British vs US English
   I would be interested to know which "americanisms" in my writing style led you to conclude that I primarily use US english. Given my Australian citizenship, I put effort into adhering to the British spelling conventions. However I do not actively check my grammar for any US influences.
 
   I have reinstated the british spelling of
   - neighbourhood, catalogue, colour, centre, grey
 
-  That said, there is a huge debate about "-ise" vs "-ize" in british english. It seems consistency is the main requirement here, whether is be ise or ize. Both appear to be considered "british english", whereas as only "ize" is american. Hence I would be curious to know what the A&A rule is regarding this ending.
+  That said, there is a huge online debate about "-ise" vs "-ize" in british english. It seems consistency is the main requirement here, whether it be ise or ize. Both appear to be considered "british english", whereas as only "ize" is american. Hence I would be curious to know what the A&A rule is regarding this ending. (https://painintheenglish.com/case/920/#comment-22993)
+  I'm happy to rewrite all -ize to -ise if that is what the A&A rule for british english is.
 
 - Style - "over" vs "more than".
   I appreciate that pre-2014 "more than" was deemed correct and "over" incorrect. However since 2014 the associated press accepts both variants. I was raised using "over", so it is part of my writing style. Hence I would like to keep it, unless of course there is a specific A&A rule against this.
+
+
 
 - Note 1 : Title
   Both Joao and I agree the title needs to begin with "The future"
@@ -15,84 +22,121 @@
 - Note 2 : page 2 of 38145diff.pdf
   We show that MICADO on the ELT will be able to probe the IMF of star clusters that are ten times denser than what the James Webb Space Telescope will be able to access,
   % --- re-writen for clarity ---
+
   - new:
     and over one hundred times denser than the clusters that the Hubble Space Telescope can successfully resolve.
+
   - old:
     and over one hundred times denser than those\LEt{it is not clear to me what you refer to here with "those", please repeat for clarity} imaged by the Hubble Space Telescope.
 
 - Note 3 : page 2 of 38145diff.pdf
+
   - new:
     On the local scale, the IMF describes the number of massive stars that will form during a star forming event.
     This dictates both the ultimate fate of a star formation region and the environment that emergent planet-forming circumstellar disks will be exposed too.
+
   - old:
     On the local scale, the IMF determines the number of available massive stars and with it the fate of a star formation region and creating\LEt{it is not clear what "and with it" and also "and creating" belongs to. Do you mean "the IMF determines the number of available massive stars. This number holds information about the fate of a star formation region. Massive stars create the environments..."? Please check and change for clarity} the environments that emergent planet-forming circumstellar disks will be exposed too.
 
 - Note 4 : page 3 of 38145diff.pdf
+
   - new:
     However what currently hinders a conclusive result regarding the universality of the IMF is the lack of a statistically relevant sample of directly derived IMFs in environments substantially different from the solar neighbourhood.
+
   - old:
     % One main challenge\LEt{this is not quite clear. The challenge is not the directly derived IMFs, but that it is difficult to obtain them, correct? Please rephrase this to reflect that, maybe like "We cannot conclude on the universality of the IMF without directly derived IMFs..." or similar} hinders a concluding result on the universality of the IMF:  directly derived IMFs from star-counts for environments that are substantially different from the solar neighborhood.
 
 - Note 5 - page 3 of 38145diff.pdf
     10^2 to 10^5 stars per square arcsecond (stars arcsec^-2). Should this be written out fully?
 
+
 - Additional change - end of page 3 of 38145diff.pdf
-  - old:
-    More importantly, without being able to study the massive clusters in- and outside the Milky Way, it is difficult to make strong assertions on the universality of the IMF.
+
   - new:
     More importantly, because current telescopes are unable to resolve the IMFs of massive clusters both in- and outside the Milky Way, strong assertions on the universality of the IMF are problematic.
 
+  - old:
+    More importantly, without being able to study the massive clusters in- and outside the Milky Way, it is difficult to make strong assertions on the universality of the IMF.
+
+
 - Note 6 - page 4
+
   - new:
     % Rewritten to remove the numbered list
     More precisely, we determine the lowest mass star that MICADO will be able to observe for a given density and distance.
     We also shed light on the instrumental effects that will play a critical role when such studies are undertaken with MICADO and the ELT.
     As theoretical work is always best connected to an observable quantity, we also present an estimate of the number of young clusters that will be available for IMF studies with the ELT\@ out to a distance of 5\,Mpc.
+
   - old:
     %More precisely, we address the following three questions\LEt{direct questions in a paper are unusual. Please rephrase along the lines of "... we determine the lowest mass of a star that MICADO will be able to observe ..." The questions look too much like the work order that prompted the paper, and the paper itself should be better than an order list}:
     %1) What is the lowest mass star that MICADO will be able to observe for a given density and distance?
     %2) What instrumental effects will play a critical role when such studies are undertaken with MICADO and the ELT? and
     %3) How many young clusters will be available for IMF studies with the ELT?
 
+
 - Note 7 - page 4
+
   - new:
     The latest science cases and simulations for the InfraRed Imaging Spectrograph (IRIS) on the Thirty Meter Telescope (TMT) can be found in~\cite{tmt_iris16}.
+
   - old:
     % The latest science cases and simulations for\LEt{please provide the spelled-out versions of IRIS and (TMT) and all other abbreviations at first occurrence, as I did for you so far. I am not going to continue this to get on with the editing proper} IRIS on the TMT can be found in~\cite{tmt_iris16}.
+
 
 - Note 8 - page 5
     Removed "(SimCADO)"
 
+
 - Note 9 - page 6
     Given that this figure will float in the layout, and that the introduction of the acronyms in the text occurs after the figure (at least in the latex file), I am inclined to leave the spelt out version of the 2 acronyms in the figure caption. This is also helpful for any reader who primarily looks at the captions to get the gist of the paper. For the rest of the paper text I use the acronym YMC, but write out "open clusters" as using OC feels odd when considering the flow of the text.
+
 
 - Note 10 - page 6
     Removed "apparent"
 
 -- Last sentence of page 6 - the correction loses the proper context
     I split the sentence. Hopefully the intent is now clearer.
-  - old
-    As we wanted crowding-limited observations at large distances (>1 Mpc), where the faint stars had already dropped below the sensitivity limit, we increased the true stellar density by a factor of 15x so that stars with masses M>1 Msun alone would meet the crowding criterion of one star per FWHM.
+
   - new
     Because we were looking to investigate crowding-limited observations at large distances (\textgreater1\,Mpc), where the faint stars had already dropped below the sensitivity limit, we increased the true stellar density by a factor of 15$\times$.
     This meant that the crowding criterion of one star per FWHM was met even for simulated fields where only stars with masses M\,\textgreater\,1\,\msun were above the MICADO sensitivity limit.
 
+  - old
+    As we wanted crowding-limited observations at large distances (>1 Mpc), where the faint stars had already dropped below the sensitivity limit, we increased the true stellar density by a factor of 15x so that stars with masses M>1 Msun alone would meet the crowding criterion of one star per FWHM.
+
+
 -- Last sentence of Section 2.2 - the correction does not say what I want it to say
     The context here is that the real world conditions will be less complex than our "worst case" simulations, and therefore the characterisation of the IMF will be easier when using real observational data than the simulated data that we used for the study
     I have rewriten the sentence for clarity:
-  - old
-    Real clusters will have a decreasing radial density profile except for the inner cluster core radius, which will result in a easier characterization of the IMF over our conservative approach.
+
   - new
     In contrast real clusters will have a decreasing radial density profile outside the inner cluster core radius.
     Therefore characterising the IMF of clusters from real observations will be more reliable than for our simulated images.
 
+  - old
+    Real clusters will have a decreasing radial density profile except for the inner cluster core radius, which will result in a easier characterization of the IMF over our conservative approach.
+
+
 -- First sentence of Section 2.3
-    Core regions range from 0.2 to 5 pc. Hence they are on the order of 10^0 parsec.
-    By using "on the order" I am referring to this logarithmic range.
+    Core regions range from 0.2 to 5 pc. Hence they are on the order of 1 (or 10^0) parsec.
+    By using "on the order" I am referring to a logarithmic range.
     My gut feeling tells me that "about" is more of a linear range indicator.
-    For example "about 1" could mean in the range 0.5-1.5 pc, which is not what I want to say
+    For example "about 1" means (to me) in the range e.g. 0.5-1.5 pc, which is not what I want to say
     I have reverted the sentence to use "on the order of one parsec"
+
 
 - Note 12 - page 12
     Wrote out the references individually
+
+
+- Note 13 - page 15
+    Rewrote the conclusion paragraph to remove the questions
+
+  - new
+    This work reports the results of a preliminary investigation into the mass limits for future studies of the IMF in young stellar clusters in the Milky Way and the Local Group of galaxies.
+    To find these limits, we used the instrument simulator for MICADO (SimCADO) to generate synthetic observations of 56 dense stellar regions corresponding to the cores of young stellar clusters at varying distances from Earth.
+
+  - old
+    The main goal of this work was to determine precisely how many more of these stellar populations will be visible to MICADO.
+    We tried to answer three: What is the lowest mass star that MICADO will be able to observe reliably for a given stellar density and distance? What instrumental effects will play a critical role? How many clusters will be available for IMF studies? In order to answer these questions, we used the instrument simulator for MICADO (SimCADO) to generate synthetic observations of 56 dense stellar regions corresponding to the cores of young stellar clusters at varying distances from Earth.
 
