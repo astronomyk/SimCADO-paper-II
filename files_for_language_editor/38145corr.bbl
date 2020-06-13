@@ -1,0 +1,328 @@
+\begin{thebibliography}{58}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Andrews} {et~al.}(2013){Andrews}, {Calzetti}, {Chandar}, {Lee},
+  {Elmegreen}, {Kennicutt}, {Whitmore}, {Kissel}, {da Silva}, {Krumholz},
+  {O'Connell}, {Dopita}, {Frogel}, \& {Kim}}]{andrews2013}
+{Andrews}, J.~E., {Calzetti}, D., {Chandar}, R., {et~al.} 2013, \apj, 767, 51
+
+\bibitem[{{Ascenso} {et~al.}(2009){Ascenso}, {Alves}, \&
+  {Lago}}]{Ascenso2009-de}
+{Ascenso}, J., {Alves}, J., \& {Lago}, M.~T.~V.~T. 2009, \aap, 495, 147
+
+\bibitem[{{Astropy Collaboration} {et~al.}(2013){Astropy Collaboration},
+  {Robitaille}, {Tollerud}, {Greenfield}, {Droettboom}, {Bray}, {Aldcroft},
+  {Davis}, {Ginsburg}, {Price-Whelan}, {Kerzendorf}, {Conley}, {Crighton},
+  {Barbary}, {Muna}, {Ferguson}, {Grollier}, {Parikh}, {Nair}, {Unther},
+  {Deil}, {Woillez}, {Conseil}, {Kramer}, {Turner}, {Singer}, {Fox}, {Weaver},
+  {Zabalza}, {Edwards}, {Azalee Bostroem}, {Burke}, {Casey}, {Crawford},
+  {Dencheva}, {Ely}, {Jenness}, {Labrie}, {Lim}, {Pierfederici}, {Pontzen},
+  {Ptak}, {Refsdal}, {Servillat}, \& {Streicher}}]{astropy}
+{Astropy Collaboration}, {Robitaille}, T.~P., {Tollerud}, E.~J., {et~al.} 2013,
+  \aap, 558, A33
+
+\bibitem[{Bastian {et~al.}(2010)Bastian, Covey, \& Meyer}]{Bastian2010}
+Bastian, N., Covey, K.~R., \& Meyer, M.~R. 2010, Annu. Rev. Astron. Astrophys.,
+  48, 339
+
+\bibitem[{{Boch} \& {Fernique}(2014)}]{aladinlite}
+{Boch}, T. \& {Fernique}, P. 2014, in Astronomical Society of the Pacific
+  Conference Series, Vol. 485, Astronomical Data Analysis Software and Systems
+  XXIII, ed. N.~{Manset} \& P.~{Forshay}, 277
+
+\bibitem[{{Bonnarel} {et~al.}(2000){Bonnarel}, {Fernique}, {Bienaym{\'e}},
+  {Egret}, {Genova}, {Louys}, {Ochsenbein}, {Wenger}, \& {Bartlett}}]{aladin}
+{Bonnarel}, F., {Fernique}, P., {Bienaym{\'e}}, O., {et~al.} 2000, \aaps, 143,
+  33
+
+\bibitem[{Bradley {et~al.}(2017)Bradley, Sipocz, Robitaille, Vinícius,
+  Tollerud, Deil, Barbary, Günther, Cara, Busko, Droettboom, Bostroem, Bray,
+  Bratholm, Pickering, Craig, Barentsen, Pascual, Conseil, adonath, Greco,
+  Kerzendorf, de~Val-Borro, StuartLittlefair, Ogaz, Lim, Ferreira, D'Eugenio,
+  \& Weaver}]{photutils}
+Bradley, L., Sipocz, B., Robitaille, T., {et~al.} 2017, astropy/photutils: v0.4
+
+\bibitem[{{Caldwell} {et~al.}(2009){Caldwell}, {Harding}, {Morrison}, {Rose},
+  {Schiavon}, \& {Kriessler}}]{caldwell09}
+{Caldwell}, N., {Harding}, P., {Morrison}, H., {et~al.} 2009, \aj, 137, 94
+
+\bibitem[{{Castro} {et~al.}(2008){Castro}, {Herrero}, {Garcia}, {Trundle},
+  {Bresolin}, {Gieren}, {Pietrzy{\'n}ski}, {Kudritzki}, \&
+  {Demarco}}]{castro2008}
+{Castro}, N., {Herrero}, A., {Garcia}, M., {et~al.} 2008, \aap, 485, 41
+
+\bibitem[{{Chabrier}(2003)}]{chabrier2003}
+{Chabrier}, G. 2003, \pasp, 115, 763
+
+\bibitem[{{Chabrier}(2005)}]{Chabrier2005}
+{Chabrier}, G. 2005, in Astrophysics and Space Science Library, Vol. 327, The
+  Initial Mass Function 50 Years Later, ed. E.~{Corbelli}, F.~{Palla}, \&
+  H.~{Zinnecker}, 41
+
+\bibitem[{{Cl{\'e}net} {et~al.}(2016){Cl{\'e}net}, {Buey}, {Rousset},
+  {Gendron}, {Esposito}, {Hubert}, {Busoni}, {Cohen}, {Riccardi}, {Chapron},
+  {Bonaglia}, {Sevin}, {Baudoz}, {Feautrier}, {Zins}, {Gratadour}, {Vidal},
+  {Chemla}, {Ferreira}, {Doucet}, {Durand}, {Carlotti}, {Perrot}, {Schreiber},
+  {Lombini}, {Ciliegi}, {Diolaiti}, {Schubert}, \& {Davies}}]{clenet2016}
+{Cl{\'e}net}, Y., {Buey}, T., {Rousset}, G., {et~al.} 2016, in \procspie, Vol.
+  9909, Society of Photo-Optical Instrumentation Engineers (SPIE) Conference
+  Series, 99090A
+
+\bibitem[{Conroy \& van Dokkum(2012)}]{Conroy2012-hv}
+Conroy, C. \& van Dokkum, P. 2012, ApJ, 747, 69
+
+\bibitem[{{Da Rio} {et~al.}(2009){Da Rio}, {Gouliermis}, \&
+  {Henning}}]{dario2009}
+{Da Rio}, N., {Gouliermis}, D.~A., \& {Henning}, T. 2009, \apj, 696, 528
+
+\bibitem[{{Davies} {et~al.}(2018){Davies}, {Alves}, {Cl{\'e}net}, {Lang-Bardl},
+  {Nicklas}, {Pott}, {Ragazzoni}, {Tolstoy}, {Amico}, {Anwand-Heerwart},
+  {Barboza}, {Barl}, {Baudoz}, {Bender}, {Bezawada}, {Bizenberger}, {Boland},
+  {Bonifacio}, {Borgo}, {Buey}, {Chapron}, {Chemla}, {Cohen}, {Czoske},
+  {D{\'e}o}, {Disseau}, {Dreizler}, {Dupuis}, {Fabricius}, {Falomo}, {Fedou},
+  {F{\"o}rster Schreiber}, {Garrel}, {Geis}, {Gemperlein}, {Gendron}, {Genzel},
+  {Gillessen}, {Gl{\"u}ck}, {Grupp}, {Hartl}, {H{\"a}user}, {Hess},
+  {Hofferbert}, {Hopp}, {H{\"o}rmann}, {Hubert}, {Huby}, {Huet}, {Hutterer},
+  {Ives}, {Janssen}, {Jellema}, {Kausch}, {Kerber}, {Kravcar}, {Le Ruyet},
+  {Leschinski}, {Mandla}, {Manhart}, {Massari}, {Mei}, {Merlin}, {Mohr},
+  {Monna}, {Muench}, {M{\"u}ller}, {Musters}, {Navarro}, {Neumann}, {Neumayer},
+  {Niebsch}, {Plattner}, {Przybilla}, {Rabien}, {Ramlau}, {Ramos}, {Ramsay},
+  {Rhode}, {Richter}, {Richter}, {Rix}, {Rodeghiero}, {Rohloff},
+  {Rosensteiner}, {Rousset}, {Schlichter}, {Schubert}, {Sevin}, {Stuik},
+  {Sturm}, {Thomas}, {Tromp}, {Verdoes-Kleijn}, {Vidal}, {Wagner}, {Wegner},
+  {Zeilinger}, {Ziegleder}, {Ziegler}, \& {Zins}}]{micado2018}
+{Davies}, R., {Alves}, J., {Cl{\'e}net}, Y., {et~al.} 2018, in Society of
+  Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 10702,
+  \procspie, 107021S
+
+\bibitem[{{Davies} {et~al.}(2016){Davies}, {Schubert}, {Hartl}, {Alves},
+  {Cl{\'e}net}, {Lang-Bardl}, {Nicklas}, {Pott}, {Ragazzoni}, {Tolstoy},
+  {Agocs}, {Anwand-Heerwart}, {Barboza}, {Baudoz}, {Bender}, {Bizenberger},
+  {Boccaletti}, {Boland}, {Bonifacio}, {Briegel}, {Buey}, {Chapron}, {Cohen},
+  {Czoske}, {Dreizler}, {Falomo}, {Feautrier}, {F{\"o}rster Schreiber},
+  {Gendron}, {Genzel}, {Gl{\"u}ck}, {Gratadour}, {Greimel}, {Grupp},
+  {H{\"a}user}, {Haug}, {Hennawi}, {Hess}, {H{\"o}rmann}, {Hofferbert}, {Hopp},
+  {Hubert}, {Ives}, {Kausch}, {Kerber}, {Kravcar}, {Kuijken}, {Lang-Bardl},
+  {Leitzinger}, {Leschinski}, {Massari}, {Mei}, {Merlin}, {Mohr}, {Monna},
+  {M{\"u}ller}, {Navarro}, {Plattner}, {Przybilla}, {Ramlau}, {Ramsay},
+  {Ratzka}, {Rhode}, {Richter}, {Rix}, {Rodeghiero}, {Rohloff}, {Rousset},
+  {Ruddenklau}, {Schaffenroth}, {Schlichter}, {Sevin}, {Stuik}, {Sturm},
+  {Thomas}, {Tromp}, {Turatto}, {Verdoes-Kleijn}, {Vidal}, {Wagner}, {Wegner},
+  {Zeilinger}, {Ziegler}, \& {Zins}}]{micado2016}
+{Davies}, R., {Schubert}, J., {Hartl}, M., {et~al.} 2016, in \procspie, Vol.
+  9908, Society of Photo-Optical Instrumentation Engineers (SPIE) Conference
+  Series, 99081Z
+
+\bibitem[{{Deep} {et~al.}(2011){Deep}, {Fiorentino}, {Tolstoy}, {Diolaiti},
+  {Bellazzini}, {Ciliegi}, {Davies}, \& {Conan}}]{deep11}
+{Deep}, A., {Fiorentino}, G., {Tolstoy}, E., {et~al.} 2011, \aap, 531, A151
+
+\bibitem[{{Diolaiti}(2010)}]{maory}
+{Diolaiti}, E. 2010, The Messenger, 140, 28
+
+\bibitem[{Drass {et~al.}(2016)Drass, Haas, Chini, Bayo, Hackstein, Hoffmeister,
+  Godoy, \& Vogt}]{Drass2016-kp}
+Drass, H., Haas, M., Chini, R., {et~al.} 2016, Mon. Not. R. Astron. Soc., 461,
+  1734
+
+\bibitem[{{Espinoza} {et~al.}(2009){Espinoza}, {Selman}, \&
+  {Melnick}}]{espinoza2009}
+{Espinoza}, P., {Selman}, F.~J., \& {Melnick}, J. 2009, \aap, 501, 563
+
+\bibitem[{{Fan} \& {de Grijs}(2014)}]{fan2014}
+{Fan}, Z. \& {de Grijs}, R. 2014, \apjs, 211, 22
+
+\bibitem[{{Gallart} {et~al.}(1999){Gallart}, {Freedman}, {Aparicio},
+  {Bertelli}, \& {Chiosi}}]{gallart1999}
+{Gallart}, C., {Freedman}, W.~L., {Aparicio}, A., {Bertelli}, G., \& {Chiosi},
+  C. 1999, \aj, 118, 2245
+
+\bibitem[{{Geha} {et~al.}(2013){Geha}, {Brown}, {Tumlinson}, {Kalirai},
+  {Simon}, {Kirby}, {VandenBerg}, {Mu{\~n}oz}, {Avila}, {Guhathakurta}, \&
+  {Ferguson}}]{geha2013}
+{Geha}, M., {Brown}, T.~M., {Tumlinson}, J., {et~al.} 2013, \apj, 771, 29
+
+\bibitem[{{Gilmozzi} \& {Spyromilio}(2007)}]{eelt}
+{Gilmozzi}, R. \& {Spyromilio}, J. 2007, The Messenger, 127
+
+\bibitem[{{Glatt} {et~al.}(2010){Glatt}, {Grebel}, \& {Koch}}]{glatt2010}
+{Glatt}, K., {Grebel}, E.~K., \& {Koch}, A. 2010, \aap, 517, A50
+
+\bibitem[{{Greggio} {et~al.}(2012){Greggio}, {Falomo}, {Zaggia}, {Fantinel}, \&
+  {Uslenghi}}]{greggio12}
+{Greggio}, L., {Falomo}, R., {Zaggia}, S., {Fantinel}, D., \& {Uslenghi}, M.
+  2012, \pasp, 124, 653
+
+\bibitem[{{Gullieuszik} {et~al.}(2015){Gullieuszik}, {Falomo}, {Greggio},
+  {Uslenghi}, \& {Fantinel}}]{gullieuszik15}
+{Gullieuszik}, M., {Falomo}, R., {Greggio}, L., {Uslenghi}, M., \& {Fantinel},
+  D. 2015, \memsai, 86, 458
+
+\bibitem[{{Hunter} {et~al.}(1997){Hunter}, {Light}, {Holtzman}, \&
+  {Grillmair}}]{hunter1997}
+{Hunter}, D.~A., {Light}, R.~M., {Holtzman}, J.~A., \& {Grillmair}, C.~J. 1997,
+  \apj, 478, 124
+
+\bibitem[{{Hunter} {et~al.}(1995){Hunter}, {Shaya}, {Holtzman}, {Light},
+  {O'Neil}, \& {Lynds}}]{hunter1995}
+{Hunter}, D.~A., {Shaya}, E.~J., {Holtzman}, J.~A., {et~al.} 1995, \apj, 448,
+  179
+
+\bibitem[{{Kalirai} {et~al.}(2013){Kalirai}, {Anderson}, {Dotter}, {Richer},
+  {Fahlman}, {Hansen}, {Hurley}, {Reid}, {Rich}, \& {Shara}}]{kalirai2013}
+{Kalirai}, J.~S., {Anderson}, J., {Dotter}, A., {et~al.} 2013, \apj, 763, 110
+
+\bibitem[{{Karachentsev} {et~al.}(2013){Karachentsev}, {Makarov}, \&
+  {Kaisina}}]{karachentsev2013}
+{Karachentsev}, I.~D., {Makarov}, D.~I., \& {Kaisina}, E.~I. 2013, \aj, 145,
+  101
+
+\bibitem[{{Karampelas} {et~al.}(2009){Karampelas}, {Dapergolas}, {Kontizas},
+  {Livanou}, {Kontizas}, {Bellas-Velidis}, \& {V{\'\i}lchez}}]{karampelas2009}
+{Karampelas}, A., {Dapergolas}, A., {Kontizas}, E., {et~al.} 2009, \aap, 497,
+  703
+
+\bibitem[{{Kharchenko} {et~al.}(2013){Kharchenko}, {Piskunov}, {Schilbach},
+  {R{\"o}ser}, \& {Scholz}}]{heasarc_mwsc}
+{Kharchenko}, N.~V., {Piskunov}, A.~E., {Schilbach}, E., {R{\"o}ser}, S., \&
+  {Scholz}, R.~D. 2013, \aap, 558, A53
+
+\bibitem[{{Kroupa}(2001)}]{kroupa2001}
+{Kroupa}, P. 2001, \mnras, 322, 231
+
+\bibitem[{{Kroupa}(2002)}]{Kroupa2002}
+{Kroupa}, P. 2002, Science, 295, 82
+
+\bibitem[{Lada \& Lada(2003)}]{Lada2003-ip}
+Lada, C.~J. \& Lada, E.~A. 2003, Annual Review of Astronomy \&Astrophysics, 41,
+  57
+
+\bibitem[{{Ledrew}(2001)}]{ledrew2001}
+{Ledrew}, G. 2001, \jrasc, 95, 32
+
+\bibitem[{{Leschinski} {et~al.}(2016){Leschinski}, {Czoske}, {K{\"o}hler},
+  {Mach}, {Zeilinger}, {Verdoes Kleijn}, {Alves}, {Kausch}, \&
+  {Przybilla}}]{leschinski2016}
+{Leschinski}, K., {Czoske}, O., {K{\"o}hler}, R., {et~al.} 2016, in \procspie,
+  Vol. 9911, Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series, 991124
+
+\bibitem[{{Leschinski} {et~al.}(2019){Leschinski}, {Czoske}, {K{\"o}hler},
+  {Mach}, {Zeilinger}, {Verdoes Kleijn}, {Kausch}, {Przybilla}, {Alves}, \&
+  {Davies}}]{leschinski19}
+{Leschinski}, K., {Czoske}, O., {K{\"o}hler}, R., {et~al.} 2019, in
+  Astronomical Society of the Pacific Conference Series, Vol. 521, Astronomical
+  Data Analysis Software and Systems XXVI, ed. M.~{Molinaro}, K.~{Shortridge},
+  \& F.~{Pasian}, 527
+
+\bibitem[{{Mel'Nik} \& {Efremov}(1995)}]{melnik1995}
+{Mel'Nik}, A.~M. \& {Efremov}, Y.~N. 1995, Astronomy Letters, 21, 10
+
+\bibitem[{Mu{\v z}i{\'c} {et~al.}(2017)Mu{\v z}i{\'c}, Sch{\"o}del, Scholz,
+  Geers, Jayawardhana, Ascenso, \& Cieza}]{muzic17}
+Mu{\v z}i{\'c}, K., Sch{\"o}del, R., Scholz, A., {et~al.} 2017, Mon. Not. R.
+  Astron. Soc., 471, 3699
+
+\bibitem[{{Nogueras-Lara} {et~al.}(2019){Nogueras-Lara}, {Schoedel},
+  {Gallego-Calvente}, {Dong}, {Gallego-Cano}, {Shahzamanian}, {Girard},
+  {Nishiyama}, {Najarro}, \& {Neumayer}}]{galacticnucleaus}
+{Nogueras-Lara}, F., {Schoedel}, R., {Gallego-Calvente}, A.~T., {et~al.} 2019,
+  VizieR Online Data Catalog, J/A+A/631/A20
+
+\bibitem[{{Pecaut} \& {Mamajek}(2013)}]{pecaut2013}
+{Pecaut}, M.~J. \& {Mamajek}, E.~E. 2013, \apjs, 208, 9
+
+\bibitem[{{Perrin} {et~al.}(2015){Perrin}, {Long}, {Sivaramakrishnan},
+  {Lajoie}, {Elliot}, {Pueyo}, \& {Albert}}]{poppy}
+{Perrin}, M.~D., {Long}, J., {Sivaramakrishnan}, A., {et~al.} 2015, {WebbPSF:
+  James Webb Space Telescope PSF Simulation Tool}, Astrophysics Source Code
+  Library
+
+\bibitem[{{Pietrzy{\'n}ski} {et~al.}(2001){Pietrzy{\'n}ski}, {Gieren},
+  {Fouqu{\'e}}, \& {Pont}}]{pietrzynski2001}
+{Pietrzy{\'n}ski}, G., {Gieren}, W., {Fouqu{\'e}}, P., \& {Pont}, F. 2001,
+  \aap, 371, 497
+
+\bibitem[{{Piskunov} {et~al.}(2007){Piskunov}, {Schilbach}, {Kharchenko},
+  {R{\"o}ser}, \& {Scholz}}]{piskunov2007}
+{Piskunov}, A.~E., {Schilbach}, E., {Kharchenko}, N.~V., {R{\"o}ser}, S., \&
+  {Scholz}, R.-D. 2007, \aap, 468, 151
+
+\bibitem[{{Portegies Zwart} {et~al.}(2010){Portegies Zwart}, {McMillan}, \&
+  {Gieles}}]{portegies2010}
+{Portegies Zwart}, S.~F., {McMillan}, S.~L.~W., \& {Gieles}, M. 2010, \araa,
+  48, 431
+
+\bibitem[{{Rajan} \& {et al.}(2011)}]{hst_wfc3}
+{Rajan}, A. \& {et al.} 2011, {WFC3 Data Handbook v. 2.1} (STSci)
+
+\bibitem[{{Rauscher}(2015)}]{nghxrg}
+{Rauscher}, B.~J. 2015, \pasp, 127, 1144
+
+\bibitem[{{Salpeter}(1955)}]{salpeter1955}
+{Salpeter}, E.~E. 1955, \apj, 121, 161
+
+\bibitem[{{Schmalzl} {et~al.}(2008){Schmalzl}, {Gouliermis}, {Dolphin}, \&
+  {Henning}}]{schmalzl2008}
+{Schmalzl}, M., {Gouliermis}, D.~A., {Dolphin}, A.~E., \& {Henning}, T. 2008,
+  \apj, 681, 290
+
+\bibitem[{{Sirianni} {et~al.}(2002){Sirianni}, {Nota}, {De Marchi},
+  {Leitherer}, \& {Clampin}}]{sirianni2002}
+{Sirianni}, M., {Nota}, A., {De Marchi}, G., {Leitherer}, C., \& {Clampin}, M.
+  2002, \apj, 579, 275
+
+\bibitem[{{Sirianni} {et~al.}(2000){Sirianni}, {Nota}, {Leitherer}, {De
+  Marchi}, \& {Clampin}}]{sirianni2000}
+{Sirianni}, M., {Nota}, A., {Leitherer}, C., {De Marchi}, G., \& {Clampin}, M.
+  2000, \apj, 533, 203
+
+\bibitem[{{Stolte} {et~al.}(2008){Stolte}, {Ghez}, {Morris}, {Lu}, {Brandner},
+  \& {Matthews}}]{stolte2008}
+{Stolte}, A., {Ghez}, A.~M., {Morris}, M., {et~al.} 2008, \apj, 675, 1278
+
+\bibitem[{{The Astropy Collaboration} {et~al.}(2018){The Astropy
+  Collaboration}, {Price-Whelan}, {Sip{\H o}cz}, {G{\"u}nther}, {Lim},
+  {Crawford}, {Conseil}, {Shupe}, {Craig}, {Dencheva}, {Ginsburg},
+  {VanderPlas}, {Bradley}, {P{\'e}rez-Su{\'a}rez}, {de Val-Borro}, {Aldcroft},
+  {Cruz}, {Robitaille}, {Tollerud}, {Ardelean}, {Babej}, {Bachetti}, {Bakanov},
+  {Bamford}, {Barentsen}, {Barmby}, {Baumbach}, {Berry}, {Biscani}, {Boquien},
+  {Bostroem}, {Bouma}, {Brammer}, {Bray}, {Breytenbach}, {Buddelmeijer},
+  {Burke}, {Calderone}, {Cano Rodr{\'{\i}}guez}, {Cara}, {Cardoso},
+  {Cheedella}, {Copin}, {Crichton}, {D{\'A}vella}, {Deil}, {Depagne},
+  {Dietrich}, {Donath}, {Droettboom}, {Earl}, {Erben}, {Fabbro}, {Ferreira},
+  {Finethy}, {Fox}, {Garrison}, {Gibbons}, {Goldstein}, {Gommers}, {Greco},
+  {Greenfield}, {Groener}, {Grollier}, {Hagen}, {Hirst}, {Homeier}, {Horton},
+  {Hosseinzadeh}, {Hu}, {Hunkeler}, {Ivezi{\'c}}, {Jain}, {Jenness}, {Kanarek},
+  {Kendrew}, {Kern}, {Kerzendorf}, {Khvalko}, {King}, {Kirkby}, {Kulkarni},
+  {Kumar}, {Lee}, {Lenz}, {Littlefair}, {Ma}, {Macleod}, {Mastropietro},
+  {McCully}, {Montagnac}, {Morris}, {Mueller}, {Mumford}, {Muna}, {Murphy},
+  {Nelson}, {Nguyen}, {Ninan}, {N{\"o}the}, {Ogaz}, {Oh}, {Parejko}, {Parley},
+  {Pascual}, {Patil}, {Patil}, {Plunkett}, {Prochaska}, {Rastogi}, {Reddy
+  Janga}, {Sabater}, {Sakurikar}, {Seifert}, {Sherbert}, {Sherwood-Taylor},
+  {Shih}, {Sick}, {Silbiger}, {Singanamalla}, {Singer}, {Sladen}, {Sooley},
+  {Sornarajah}, {Streicher}, {Teuben}, {Thomas}, {Tremblay}, {Turner},
+  {Terr{\'o}n}, {van Kerkwijk}, {de la Vega}, {Watkins}, {Weaver}, {Whitmore},
+  {Woillez}, \& {Zabalza}}]{astropy2}
+{The Astropy Collaboration}, {Price-Whelan}, A.~M., {Sip{\H o}cz}, B.~M.,
+  {et~al.} 2018, ArXiv e-prints [\eprint[arXiv]{1801.02634}]
+
+\bibitem[{{Tolstoy}(2019)}]{tolstoy19_iau}
+{Tolstoy}, E. 2019, in IAU Symposium, Vol. 343, IAU Symposium, ed.
+  F.~{Kerschbaum}, M.~{Groenewegen}, \& H.~{Olofsson}, 49--58
+
+\bibitem[{van Dokkum \& Conroy(2010)}]{Van_Dokkum2010-gx}
+van Dokkum, P.~G. \& Conroy, C. 2010, Nature, 468, 940
+
+\bibitem[{{Wright} {et~al.}(2016){Wright}, {Walth}, {Do}, {Marshall}, {Larkin},
+  {Moore}, {Adamkovics}, {Andersen}, {Armus}, {Barth}, {Cote}, {Cooke},
+  {Chisholm}, {Davidge}, {Dunn}, {Dumas}, {Ellerbroek}, {Ghez}, {Hao},
+  {Hayano}, {Liu}, {Lopez-Rodriguez}, {Lu}, {Mao}, {Marois}, {Pandey},
+  {Phillips}, {Schoeck}, {Subramaniam}, {Subramanian}, {Suzuki}, {Tan},
+  {Terai}, {Treu}, {Simard}, {Weiss}, {Wincentsen}, {Wong}, \&
+  {Zhang}}]{tmt_iris16}
+{Wright}, S.~A., {Walth}, G., {Do}, T., {et~al.} 2016, in Society of
+  Photo-Optical Instrumentation Engineers (SPIE) Conference Series, Vol. 9909,
+  \procspie, 990905
+
+\end{thebibliography}
